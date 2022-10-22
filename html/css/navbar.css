@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 1000px) {
+  .navbar-collapse {
+    margin-top: 20px;
+  }
+  .navbar .nav-link {
+    font-size: 1.7rem;
+  }
+}
+
+.navbar {
+  background-color: var(--darker_jet);
+  padding: 20px 0;
+  position: relative;
+}
+
+.navbar-toggler {
+  color: var(--platinium);
+  padding: 5px 20px;
+}
+.navbar-toggler:focus {
+  outline-style: none;
+}
+
+.navbar .nav-link {
+  font-size: 1.1em;
+  padding: 5px 15px;
+  color: var(--platinium);
+  margin-top: 10px;
+}
+.navbar .nav-link:hover {
+  color: var(--grayXgray);
+}
+.navbar-brand {
+  padding: 0 15px;
+  text-decoration: none;
+}
+
+.navbar-mid-brand {
+  padding: 0 15px;
+}
+.navbar-mid-brand img {
+  height: 50px;
+}
