@@ -5,6 +5,7 @@
     --cadmium_green: #1A6C3D;
     --shadow_green: #1a6c3d66;
     --cadmium_green_tra: #1a6c3e54;
+    --cadmium_green_window: #1a6c3ec1;
 
 /* -- Dark Colors */
     --modal_back: #0C0C0CBF;
@@ -43,4 +44,14 @@ body {
   background-size: auto;
   font-family: "Montserrat", sans-serif;
   color: var(--platinium);
+  overflow-x: hidden;
+}
+
+
+.features {
+    padding: 30px;
+}
+
+.features-list-elm {
+    width: 100%;
 }

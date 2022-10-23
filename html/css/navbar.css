@@ -1,18 +1,41 @@
 
-@media screen and (max-width: 1000px) {
-  .navbar-collapse {
-    margin-top: 20px;
+@media screen and (max-width: 990px) {
+  .navbar-nav {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .navbar .nav-link {
-    font-size: 1.7rem;
+    font-size: 1.3rem !important;
+  }
+  .nav-item {
+    width: 100% !important;
+    text-align: right !important;
+  }
+  .navbar {
+    height: 80px !important;
+  }
+
+  .nav-dropdown .list-group-item {
+    text-align: right !important;
   }
 }
 
 .navbar {
-  background-color: var(--darker_jet);
   padding: 20px 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  background: rgb(34,34,34);
+  background: linear-gradient(0deg, rgba(34,34,34,0) 10%, rgb(21, 21, 21) 90%);
+  height: 120px;
+  transition: .2s;
+  z-index: 10;
 }
+
+.nav-collapse-bg, .nav-collapse-bg .navbar-collapse {
+  background-color: var(--black_light) !important;
+}
+
+
 
 .navbar-toggler {
   color: var(--platinium);
@@ -24,13 +47,20 @@
 
 .navbar .nav-link {
   font-size: 1.1em;
-  padding: 5px 15px;
+  padding: 10px 15px;
   color: var(--platinium);
   margin-top: 10px;
+  z-index: 2;
 }
+
 .navbar .nav-link:hover {
-  color: var(--grayXgray);
+  color: var(--sea_green) !important;
 }
+
+.nav-item:hover {
+  background: linear-gradient(180deg, rgba(34,34,34,0) 10%, rgb(32, 32, 32) 100%);
+}
+
 .navbar-brand {
   padding: 0 15px;
   text-decoration: none;
@@ -38,7 +68,66 @@
 
 .navbar-mid-brand {
   padding: 0 15px;
+  position: relative;
+  transform: scale(1.4) translateY(10px);
+  text-align: center;
+  text-decoration: none;
+  color: var(--cadmium_green);
+  /* text-transform: uppercase; */
+  font-size: 14px;
+  transition: 1s;
+}
+.navbar-mid-brand:hover {
+  color: var(--green_pantone);
 }
 .navbar-mid-brand img {
-  height: 50px;
+  height: 60px;
+}
+
+.navbar-mid-heading {
+  text-shadow: 0 0 15px rgb(12 12 12);
+  white-space: nowrap;
+}
+
+.nav-item {
+  width: 200px;
+  text-align: center;
+}
+
+
+
+
+.nav-dropdown {
+  position: absolute;
+  background-color: transparent;
+  color: var(--black_light);
+  border-radius: 2px;
+  width: inherit;
+  z-index: 1;
+  height: 0;
+  overflow-y: hidden;
+  transition: .2s;
+}
+
+.nav-dropdown .list-group {
+  border-radius: 2px;
+}
+
+.nav-dropdown .list-group-item {
+  text-align: center;
+  background-color: var(--side_black);
+  color: var(--platinium);
+  font-size: 15px;
+  transition: .2s;
+  border-width: 0;
+}
+
+.nav-dropdown .list-group-item:hover {
+  color: var(--cadmium_green);
+  background-color: var(--middle_black);
+}
+
+.active {
+  height: auto;
+  transition: .2s;
 }
