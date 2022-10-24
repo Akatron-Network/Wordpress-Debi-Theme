@@ -20,6 +20,12 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .nav-item {
+    width: 160px !important;
+  }
+}
+
 .navbar {
   padding: 20px 0;
   position: absolute;
@@ -54,7 +60,7 @@
 }
 
 .navbar .nav-link:hover {
-  color: var(--sea_green) !important;
+  color: var(--green_pantone) !important;
 }
 
 .nav-item:hover {
@@ -75,7 +81,7 @@
   color: var(--cadmium_green);
   /* text-transform: uppercase; */
   font-size: 14px;
-  transition: 1s;
+  transition: .5s;
 }
 .navbar-mid-brand:hover {
   color: var(--green_pantone);
@@ -130,4 +136,35 @@
 .active {
   height: auto;
   transition: .2s;
+}
+
+.btn-login {
+  color: var(--platinium);
+  position: absolute; 
+  right: 35px; 
+  top: 35px;
+  font-size: 18px;
+  border: solid 1px var(--onyx);
+  border-radius: 3px;
+  width: 45px;
+  transition: .3s;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.btn-login span {
+  opacity: 0;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  color: var(--green_pantone);
+  background-color: var(--darkest_jet);
+  border: solid 1px var(--onyx);
+  width: 132px;
+}
+
+.btn-login:hover span {
+  opacity: 1;
 }

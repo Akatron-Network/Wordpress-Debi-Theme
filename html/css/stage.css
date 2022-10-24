@@ -30,7 +30,10 @@
 }
 
 .stage-text-col h1 {
-  font-size: 40px
+  font-size: 40px;
+  font-family: "Righteous";
+  text-transform: capitalize;
+  letter-spacing: 3px;
 }
 
 .stage-text-col p {
@@ -47,5 +50,11 @@
   .stage-img-col {
     text-align: center;
     width: 100%;
+  }
+  .stage-text-col {
+    padding-top: 30px;
+  }
+  .stage {
+    padding-top: 70px;
   }
 }

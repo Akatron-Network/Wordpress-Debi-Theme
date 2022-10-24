@@ -1,13 +1,11 @@
 
-window.onload = function () {
-
-  dragElement(document.getElementById("win"));
-}
-
+var dragable_elements = []
 
 function dragElement(elmnt) {
 
   if (window.innerWidth < 900) return;
+
+  dragable_elements.push(elmnt);
 
   elmnt.insertAdjacentHTML('afterend', '<div id="' + elmnt.id + '_shadow" style="visibility: hidden;"></div>')
   document.getElementById(elmnt.id + "_shadow").style.width = elmnt.clientWidth + "px"
@@ -91,3 +89,11 @@ async function goBackWin(elmnt) {
 function timeout(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+window.addEventListener('resize', (event) => {
+  for (let elmnt of dragable_elements) {
+    document.getElementById(elmnt.id + "_shadow").style.width = elmnt.clientWidth + "px"
+    document.getElementById(elmnt.id + "_shadow").style.height = elmnt.clientHeight + "px"
+  }
+});

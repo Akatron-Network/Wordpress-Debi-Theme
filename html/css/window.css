@@ -9,12 +9,18 @@
   position: absolute;
   cursor: default;
   box-shadow: 1px 5px 20px 4px rgb(0 0 0 / 50%);
+  z-index: 1;
 }
 
 
 .window-headbar {
   display: flex;
   padding: 3px 5px;
+  cursor: grab;
+}
+
+.window-headbar:active {
+  cursor: grabbing;
 }
 
 .window-headbar .head-text {
