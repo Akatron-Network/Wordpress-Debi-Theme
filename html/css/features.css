@@ -1,0 +1,84 @@
+
+.features-outer {
+  padding: 40px;
+  margin-top: -60px;
+}
+
+.feature-col {
+  text-align: center;
+}
+
+.feature-col h2 {
+  font-size: 27px;
+  margin-top: 20px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--sea_green);
+}
+
+.feature-col img {
+  height: 80px;
+}
+
+.feature-mid-col {
+  padding-top: 100px;
+}
+
+.feature-passive img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.feature-passive h2 {
+  color: var(--graysix);
+}
+
+
+/* ------------------- */
+
+
+.feature-details-outer {
+  background-image: url('../img/backgrounds/feature-bg.png');
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  padding-top: 180px;
+  margin-top: -80px;
+}
+
+.feature-element-window {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+}
+
+/* .feature-element-text {
+  padding: 20px 0;
+} */
+
+.feature-element-text h3 {
+  font-size: 45px;
+  font-family: "Righteous";
+  letter-spacing: 2px;
+  color: var(--green_pantone);
+}
+
+.feature-element-text .divider {
+  height: 3px;
+  width: 50%;
+  background-color: var(--graysix);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-element-text p {
+  font-size: 21px;
+  color: var(--cultured);
+}
+
+.feature-element-text p .spacing {
+  width: 20px;
+  height: 1px;
+  display: inline-block;
+}

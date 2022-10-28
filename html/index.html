@@ -6,29 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeBI</title>
     <link rel="icon" type="image/x-icon" href="img/ico.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Righteous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/stage.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/free-trial.css" />
+    <link rel="stylesheet" href="css/window.css" />
   </head>
   <body>
 
@@ -176,23 +163,154 @@
     </nav>
     <!-- -- -->
 
-
+    <!-- -- STAGE -- -->
     <div class="stage-outer">
+
+      <!--* STAGE TOP SHOW -->
       <div class="row justify-content-center">
         <div class="col-xl-5 stage-text">
-          <div class="heading">
-            YÖNETİM<br>ASİSTANINIZ<span>!</span>
-          </div>
+          <div class="heading">YÖNETİM<br />ASİSTANINIZ<span>!</span></div>
           <div class="divider"></div>
+          <div class="details">
+            Anlaşılır ve sadeleştirilmiş <b>pivot tablolar, grafikler</b> ve bir
+            çok panel çeşidine sahip anlık raporlar ile doğru kararlar verin!
+          </div>
         </div>
-        <div class="col-xl-5">
+        <div class="col-xl-6 stage-anim">
+          <img src="img/stage-screen-anim.png" alt="" />
+        </div>
+      </div>
 
+      <!--* STAGE BOTTOM HEADINGS -->
+      <div class="stage-feature-outer">
+        <div class="stage-feature">
+          <span>Gerçek Zamanlı</span> Raporlara Her Yerden Ulaşın!
+        </div>
+      </div>
+
+    </div>
+
+    <!-- -- FEATURES -->
+    <div class="features-outer">
+      <div class="row justify-content-around">
+        <div class="col-xl-4 feature-col">
+          <img src="img/Icon_easy-to-use.png" alt="">
+          <h2>Kolay Kullanım</h2>
+        </div>
+        <div class="col-xl-4 feature-col feature-mid-col feature-passive">
+          <img src="img/Icon_real-time.png" alt="">
+          <h2>Gerçek Zamanlı</h2>
+        </div>
+        <div class="col-xl-4 feature-col feature-passive">
+          <img src="img/Icon_integrations.png" alt="">
+          <h2>Zengin Entegrasyon</h2>
         </div>
       </div>
     </div>
 
+    <!-- -- FETAURE DETAILS -- -->
+    <div class="feature-details-outer">
 
+      <div class="feature-details">
 
+        <div class="feature-details-element">
+          <div class="row justify-content-evenly">
+            <div class="col-xxl-5 col-xl-5 feature-element-window">
+  
+              <div class="window" id="win" style="left: 0; top: 0;">
+                <div class="window-headbar" id="winheader">
+                  <div class="head-text">
+                    <img src="img/akt-icon.png" alt="">
+                    <h2>DeBI</h2>
+                  </div>
+                  <div class="head-icons">
+                    <i class="fa-solid fa-window-minimize"></i>
+                    <i class="fa-solid fa-expand"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <div class="window-context">
+                  <img src="img/debi-screen-2.png" alt="" style="width: 100%">
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-xxl-5 col-xl-6 feature-element-text">
+              <h3>Teknik Bilgi Gerektirmez!</h3>
+              <div class="divider"></div>
+              <p>
+                <span class="spacing"></span> DeBI hiçbir kod yazmanızı gerektirmeden tüm 
+                raporlarınızı basit arayüzler ile hazırlamanızı sağlar. 
+                Bu sayede özel eğitim olmaksızın herkes veri raporlarını 
+                oluşturabilir, paylaşabilir ve sunabilir.
+              </p>
+              <p>
+                <span class="spacing"></span> Küçük ve orta ölçekli işletmelerin raporlarını oluşturabilmek 
+                için özel destek almasına gerek kalmaksızın DeBI ile raporlar 
+                oluşturabilir ve karar verebilmek için, gerekli temiz bir analizi 
+                gözlemleyebilmesini sağlar.
+            </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="free-trial-outer">
+        <div class="row justify-content-center">
+          <div class="col-xxl-5 col-lg-6 col-md-12 free-trial-card">
+            <h1>ÜCRETSİZ DENEYİN</h1>
+            <h2>Deneme Talebi</h2>
+            <br>
+            <form action="" class="free-trial-form mb-3">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">İsim *</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Firma</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Zorunlu Değildir">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefon veya E-Mail *</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                </div>
+                <div class="col-lg-12 mt-2" style="text-align: right">
+                  <button type="submit" class="btn">Gönder</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 200px"></div>
+
+      <div class="supported-platforms-outer">
+        <div class="header">
+          <h1>Desteklenen Kaynaklar</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/window.js"></script>
+    <script>
+      
+      window.onload = function () {
+        dragElement(document.getElementById("win"));
+      }
+    </script>
   </body>
 </html>

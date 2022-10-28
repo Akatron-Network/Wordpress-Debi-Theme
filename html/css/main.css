@@ -1,44 +1,43 @@
 :root {
-/* -- Main Greens */
-    --green_pantone: #14B85B;
-    --sea_green: #20834B;
-    --cadmium_green: #1A6C3D;
-    --shadow_green: #1a6c3d66;
-    --cadmium_green_tra: #1a6c3e54;
-    --cadmium_green_window: #1a6c3ec1;
-    --cadmium_green_dark: #185331;
+  /* -- Main Greens */
+  --green_pantone: #14b85b;
+  --sea_green: #20834b;
+  --cadmium_green: #1a6c3d;
+  --shadow_green: #1a6c3d66;
+  --cadmium_green_tra: #1a6c3e54;
+  --cadmium_green_window: #1a6c3ec1;
+  --cadmium_green_dark: #185331;
 
-/* -- Dark Colors */
-    --modal_back: #0C0C0CBF;
-    --black_light: #151515;
-    --side_black: #181818;
-    --middle_black: #1B1B1B;
-    --earie_black: #1F1F1F;
-    --darkest_jet: #202020;
-    --darker_jet: #232323;
-    --jet_shadow: #292929d4;
-    --jet: #292929;
-    --jet_mid: #2E2E2E;
-    --jet_glass: #2e2e2e6b;
-    --jet_light: #333333;
-    --hr_gray: #4950573d;
-    --onyx: #3D3D3D;
-    --onyx_middle: #606060;
-    --onyx_light: #767676;
+  /* -- Dark Colors */
+  --modal_back: #0c0c0cbf;
+  --black_light: #151515;
+  --side_black: #181818;
+  --middle_black: #1b1b1b;
+  --earie_black: #1f1f1f;
+  --darkest_jet: #202020;
+  --darker_jet: #232323;
+  --jet_shadow: #292929d4;
+  --jet: #292929;
+  --jet_mid: #2e2e2e;
+  --jet_glass: #2e2e2e6b;
+  --jet_light: #333333;
+  --hr_gray: #4950573d;
+  --onyx: #3d3d3d;
+  --onyx_middle: #606060;
+  --onyx_light: #767676;
 
-/* -- Light Colors */
-    --graysix: #858585;
-    --grayXgray: #B9B9B9;
-    --cultured: #b9b9b9;
-    --platinium: #EBEBEB;
+  /* -- Light Colors */
+  --graysix: #858585;
+  --grayXgray: #b9b9b9;
+  --cultured: #b9b9b9;
+  --platinium: #ebebeb;
 
-/* -- Other Colors */
-    --danger: #631E24;
-    --danger_light: #861E27;
-    --like_trans: #1b151545;
-    --none_opacity: #0000009e;
+  /* -- Other Colors */
+  --danger: #631e24;
+  --danger_light: #861e27;
+  --like_trans: #1b151545;
+  --none_opacity: #0000009e;
 }
-
 
 body {
   background-color: var(--darker_jet);
@@ -49,38 +48,3 @@ body {
 }
 
 
-.stage-outer {
-    padding: 20px;
-    padding-top: 100px;
-    min-height: 500px;
-    background-image: url('../img/backgrounds/stage-bg.png');
-    background-size: cover;
-    background-position: center bottom;
-    position: relative;
-}
-
-.stage-text {
-    padding-top: 50px;
-}
-
-.stage-text .heading {
-    font-size: 83px;
-    font-family: "Righteous";
-    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
-    position: relative;
-    line-height: 83px;
-}
-
-.stage-text .heading span {
-    font-size: 120px;
-    position: absolute;
-    bottom: 0;
-    color: var(--cadmium_green);
-}
-
-.stage-text .divider {
-    height: 3px;
-    background-color: var(--cadmium_green);
-    margin-top: 20px;
-    opacity: 0.65;
-}

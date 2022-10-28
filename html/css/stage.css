@@ -1,0 +1,73 @@
+
+
+.stage-outer {
+  padding: 20px;
+  padding-top: 100px;
+  min-height: 500px;
+  background-image: url('../img/backgrounds/stage-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+
+.stage-text {
+  padding-top: 130px;
+  padding-left: 20px;
+}
+
+.stage-text .heading {
+  font-size: 83px;
+  font-family: "Righteous";
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+  position: relative;
+  line-height: 83px;
+  letter-spacing: 2px;
+}
+
+.stage-text .heading span {
+  font-size: 120px;
+  position: absolute;
+  bottom: 0;
+  color: var(--cadmium_green);
+}
+
+.stage-text .divider {
+  height: 3px;
+  background-color: var(--cadmium_green);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.65;
+}
+
+.stage-text .details {
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding-right: 20px;
+}
+
+.stage-anim {
+  padding: 30px;
+  text-align: right;
+}
+
+.stage-anim img {
+  width: 85%;
+}
+
+
+.stage-feature-outer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.stage-feature {
+  font-size: 38px;
+  font-family: "Righteous";
+  letter-spacing: 2px;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.stage-feature span {
+  color: var(--green_pantone);
+}
