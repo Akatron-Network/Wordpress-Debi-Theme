@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeBI - Yönetim Asistanı</title>
+
+  <link rel="icon" type="image/x-icon" href="img/ico.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/stage.css">
+  <link rel="stylesheet" href="css/window.css">
+</head>
+<body>
+
+
+<nav id="nav-stick" class="navbar navbar-expand-lg d-none d-lg-block sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="img/debi-icon.png" style="height: 30px"></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nerde Kullanılır</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fiyatlandırma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bilgi Merkezi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kurumsal</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex">
+      <button class="btn btn-login btn-login-active" type="submit">
+        <i class="fa-solid fa-user-tie"></i>
+        <span>&nbsp; Giriş Yap</span>
+      </button>
+    </form>
+  </div>
+</nav>
+
+  
+<nav id="nav" class="navbar navbar-expand-lg">
+  <a class="navbar-brand d-lg-none" href="#"><img src="img/debi-icon.png" style="height: 40px"></a>
+  <button class="navbar-toggler" onclick="$('.navbar-collapse').collapse('toggle'); document.getElementById('nav').classList.toggle('nav-collapse-bg')" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item d-lg-none" style="background: transparent">
+        <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i> &nbsp; Giriş Yap</a>
+      </li>
+
+      <li class="nav-item dropable">
+        <a class="nav-link" href="#">Nerde Kullanılır</a>
+        <div class="nav-dropdown">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Departmanlar</a>
+            <a href="#" class="list-group-item list-group-item-action">Endüstriler</a>
+            <a href="#" class="list-group-item list-group-item-action">Teknolojiler</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item" style="background: transparent">
+        <a class="nav-link" href="#">Fiyatlandırma</a>
+      </li>
+
+      <a class="d-none d-lg-block navbar-mid-brand" href="#">
+        <img src="img/debi-icon.png">
+        <div class="navbar-mid-heading">Designable Business Intelligence</div>
+      </a>
+
+      <li class="nav-item dropable">
+        <a class="nav-link" href="#">Bilgi Merkezi</a>
+        <div class="nav-dropdown">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Kullanmaya Başlayın</a>
+            <a href="#" class="list-group-item list-group-item-action">Bayiler</a>
+            <a href="#" class="list-group-item list-group-item-action">Eğitim & Dersler</a>
+            <a href="#" class="list-group-item list-group-item-action">Blog</a>
+            <a href="#" class="list-group-item list-group-item-action">Dökümanlar</a>
+            <a href="#" class="list-group-item list-group-item-action">Akatron Akademi</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item dropable">
+        <a class="nav-link" href="#">Kurumsal</a>
+        <div class="nav-dropdown">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Akatron Network</a>
+            <a href="#" class="list-group-item list-group-item-action">Kariyer</a>
+            <a href="#" class="list-group-item list-group-item-action">İletişim</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <a href="#" type="button" class="btn btn-login btn-login-active d-none d-lg-block ">
+      <i class="fa-solid fa-user-tie"></i>
+      <span>&nbsp; Giriş Yap</span>
+    </a>
+  </div>
+</nav>
+
+<div class="stage">
+  <div class="stage-grad"></div>
+  <div class="stage-show">
+    <div class="row justify-content-evenly">
+
+      <div class="col-xl-5 col-lg-5 stage-text-col">
+        <h1>Yönetim Asistanınız!</h1>
+        <hr>
+        <p>Anlaşılır ve sadeleştirilmiş pivot tablolar, grafikler ve bir çok panel çeşidine sahip
+          anlık raporlar ile doğru kararlar verin!
+        </p>
+      </div>
+
+      <div class="col-xl-5 col-lg-7 stage-img-col">
+
+        <div class="window" id="win">
+          <div class="window-headbar" id="winheader">
+            <div class="head-text">
+              <img src="img/akt-icon.png" alt="">
+              <h2>DeBI</h2>
+            </div>
+            <div class="head-icons">
+              <i class="fa-solid fa-window-minimize"></i>
+              <i class="fa-solid fa-expand"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="window-context">
+            <img src="img/debi-screen-1.png" alt="" style="width: 100%">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="features-list">
+    <div class="features-list-elm feature-active">
+      Gerçek Zamanlı Raporlara Her Yerden Ulaşın!
+    </div>
+    <div class="features-list-elm">
+      İstediğiniz Her Yerde Raporlarınızı İnceleyin!
+    </div>
+    <div class="features-list-elm">
+      Teknik Bilgi veya Personele İhtiyaç Duymadan Raporlar Hazırlayın!
+    </div>
+  </div>
+
+</div>
+<div class="features-alt">
+  
+  <div class="feature-buttons">
+    <div class="row justify-content-evenly">
+      
+      <div class="feature-col">
+        <div class="feature-card feature-card-active">
+          <h1><i class="fa-solid fa-handshake-simple"></i> Kolay Kullanım</h1>
+        </div>
+      </div>
+
+      <div class="feature-col">
+        <div class="feature-card">
+          <h1><i class="fa-solid fa-clock"></i> Gerçek Zamanlı</h1>
+        </div>
+      </div>
+
+      <div class="feature-col">
+        <div class="feature-card">
+          <h1><i class="fa-solid fa-gears"></i> Zengin Entegrasyon</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <svg style="position: absolute; width: 100%; left: 0; top: -5px;" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,100 0,100 C 156.28571428571428,117.78571428571429 312.57142857142856,135.57142857142858 427,133 C 541.4285714285714,130.42857142857142 614,107.5 714,108 C 814,108.5 941.4285714285713,132.42857142857144 1067,135 C 1192.5714285714287,137.57142857142856 1316.2857142857142,118.78571428571428 1440,100 C 1440,100 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#151515" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path><path d="M 0,400 C 0,400 0,200 0,200 C 124.85714285714283,186.78571428571428 249.71428571428567,173.57142857142858 386,174 C 522.2857142857143,174.42857142857142 669.9999999999999,188.5 774,197 C 878.0000000000001,205.5 938.2857142857144,208.42857142857142 1042,208 C 1145.7142857142856,207.57142857142858 1292.8571428571427,203.78571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#151515" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path><path d="M 0,400 C 0,400 0,300 0,300 C 126.25,298.6428571428571 252.5,297.2857142857143 362,301 C 471.5,304.7142857142857 564.2499999999999,313.5 679,310 C 793.7500000000001,306.5 930.5000000000002,290.7142857142857 1061,287 C 1191.4999999999998,283.2857142857143 1315.75,291.6428571428571 1440,300 C 1440,300 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#151515" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path></svg>
+
+  <div class="feature-details">
+    <div class="row justify-content-evenly">
+
+      <div class="col-xl-5 col-lg-6" style="position: relative; padding: 0;">
+
+        <div class="window" id="win2">
+          <div class="window-headbar" id="win2header">
+            <div class="head-text">
+              <img src="img/akt-icon.png" alt="">
+              <h2>DeBI</h2>
+            </div>
+            <div class="head-icons">
+              <i class="fa-solid fa-window-minimize"></i>
+              <i class="fa-solid fa-expand"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="window-context">
+            <img src="img/debi-screen-2.png" alt="" style="width: 100%">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-xl-5 col-lg-6 text">
+        <div class="feature-text-alt">
+          <h2>Kullanmak İçin Teknik Bilgi Gerekmez!</h2>
+          <hr>
+          <br>
+          <p>
+            DeBI hiçbir <b>kod yazmanızı gerektirmeden</b> tüm raorlarınızı basit arayüzler ile hazırlamanızı sağlar.
+            Bu sayede özel <b>eğitim olmaksızın</b> herkes veri raporlarını oluşturabilir, paylaşabilir ve sunabilir.
+          </p>
+          <p>
+            Küçük ve orta ölçekli işletmelerin raporlarını oluşturabilmek için özel destek almasına gerek kalmaksızın
+            DeBI ile raporlar oluşturabilir ve <b>karar verebilmek için, gerekli temiz bir analizi</b> gözlemleyebilmesini sağlar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
+
+<div style="padding-top: 70px; padding-bottom: 70px; position: relative; background-image: url('img/bg-texture.png'); background-size: 70%;">
+  <div style="box-shadow: 0 0 7px 2px var(--grayXgray); position: absolute; top: 50%; transform: translateY(50%); width: 100%; z-index: -1;"></div>
+  <div class="container">
+    <div class="free-trial">
+      <div class="header"><i class="fa-solid fa-play"></i> 1 AY ÜCRETSİZ DENEYİN</div>
+      <div class="header-alt">Deneme Talebi Gönderin! (Ön Ödeme Gerektirmez)</div>
+      
+      <div class="row">
+        
+        <div class="col-lg-5 col-md-12">
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">İsim / Firma</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Telefon / E-Mail</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12">
+          <button type="button" class="btn btn-lg btn-trial">Gönder</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="height: 500px; background-color: var(--earie_black);"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/window.js"></script>
+<script src="js/features.js"></script>
+
+<script>
+window.onload = function () {
+  dragElement(document.getElementById("win"));
+  dragElement(document.getElementById("win2"));
+  feature_changer();
+}
+
+</script>
+</body>
+</html>

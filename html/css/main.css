@@ -6,6 +6,7 @@
     --shadow_green: #1a6c3d66;
     --cadmium_green_tra: #1a6c3e54;
     --cadmium_green_window: #1a6c3ec1;
+    --cadmium_green_dark: #185331;
 
 /* -- Dark Colors */
     --modal_back: #0C0C0CBF;
@@ -28,8 +29,8 @@
 /* -- Light Colors */
     --graysix: #858585;
     --grayXgray: #B9B9B9;
-    --platinium: #EBEBEB;
     --cultured: #b9b9b9;
+    --platinium: #EBEBEB;
 
 /* -- Other Colors */
     --danger: #631E24;
@@ -40,81 +41,9 @@
 
 
 body {
-  background-color: var(--black_light);
+  background-color: var(--earie_black);
   background-size: auto;
   font-family: "Montserrat", sans-serif;
   color: var(--platinium);
   overflow-x: hidden;
-}
-
-
-.features {
-    padding: 30px 5px;
-}
-
-.features-list {
-    width: 100%;
-    position: relative;
-    cursor: default;
-}
-
-.features-list-elm {
-    font-size: 28px;
-    font-family: "Righteous", sans-serif;
-    letter-spacing: 1px;
-    text-align: center;
-    color: var(--green_pantone);
-    text-transform: capitalize;
-    transition: .6s;
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-    top: 20px;
-    transform: scale(0.8) translateY(-50%);
-}
-
-.feature-active {
-    opacity: 1;
-    transform: scale(1) translateY(-50%);
-}
-
-.features-list-elm:hover {
-    color: var(--cadmium_green);
-}
-
-.feature-col {
-    padding: 10px;
-    display: inline-block;
-    width: 360px;
-}
-.feature-card {
-    padding: 15px;
-    text-align: center;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.feature-card:hover {
-    border-bottom: solid 4px var(--cadmium_green_tra);
-    border-radius: 5px;
-    background-color: var(--side_black);
-    color: var(--green_pantone);
-}
-.feature-card:active {
-    font-weight: bold;
-}
-
-.feature-card-active {
-    border-bottom: solid 6px var(--cadmium_green_tra);
-    border-radius: 5px;
-    color: var(--green_pantone);
-}
-
-.feature-card h1 {
-    font-size: 25px;
-    margin: 0;
-}
-.feature-card i {
-    margin-right: 5px;
-    font-size: 30px;
 }
