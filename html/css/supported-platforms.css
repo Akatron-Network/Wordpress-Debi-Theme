@@ -1,0 +1,82 @@
+
+
+.supported-platforms-outer {
+  margin-top: 50px;
+}
+
+.supported-platforms-outer .header h1 {
+  text-align: center;
+  font-family: "Righteous";
+  letter-spacing: 1.5px;
+  font-size: 55px;
+  color: var(--green_pantone);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.supported-platforms-outer .header p {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: -10px;
+  padding-bottom: 80px;
+}
+
+.supported-platforms-outer .header p span {
+  color: var(--green_pantone);
+}
+
+
+.supported-platforms-details-outer {
+  background-image: url('../img/backgrounds/supported-bg.png');
+  background-size: cover;
+  background-position: center top;
+  margin-top: -350px;
+  padding-top: 350px;
+
+}
+
+.supported-platforms-details-outer .platform-col {
+  padding: 50px;
+  text-align: center;
+}
+
+
+.supported-platforms-details-outer .platform-col img {
+  width: 85%;
+}
+
+.supported-platforms-details-outer .platform-details {
+  text-align: center;
+  padding-top: 100px;
+}
+.supported-platforms-details-outer .platform-details a {
+  color: var(--green_pantone);
+  font-size: 20px;
+  text-decoration: none;
+  transition: .2s;
+}
+.supported-platforms-details-outer .platform-details a:hover {
+  color: var(--cadmium_green);
+}
+
+
+
+@media screen and (max-width: 990px) {
+  .supported-platforms-outer {
+    margin-top: 0;
+  }
+  .supported-platforms-outer .header h1 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+  }
+  .supported-platforms-outer .header p {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .supported-platforms-details-outer .platform-col {
+    padding: 0;
+  }
+  .supported-platforms-details-outer .platform-col img {
+    width: 60%
+  }
+}

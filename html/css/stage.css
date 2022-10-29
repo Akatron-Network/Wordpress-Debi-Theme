@@ -48,6 +48,8 @@
 .stage-anim {
   padding: 30px;
   text-align: right;
+  position: relative;
+  text-align: center;
 }
 
 .stage-anim img {
@@ -70,4 +72,53 @@
 
 .stage-feature span {
   color: var(--green_pantone);
+}
+
+
+@media screen and (max-width: 1370px) {
+  .stage-text .heading {
+    font-size: 73px;
+    line-height: 73px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .stage-text {
+    padding-top: 10px;
+  }
+  .stage-text .heading {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .stage-text .heading span {
+    font-size: 85px;
+    margin-left: 5px;
+    bottom: 10px;
+  }
+  .stage-text .details {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-bottom: 25px;
+  }
+  .stage-feature {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 370px) {
+  .stage-text .heading span {
+    font-size: 65px;
+  }
+  .stage-text .heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .stage-text .heading span {
+    display: none;
+  }
 }

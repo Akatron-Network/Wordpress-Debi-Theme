@@ -2,13 +2,13 @@
 
 .free-trial-outer {
   padding: 30px 0;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 
 .free-trial-card {
-  padding: 55px;
-  background-color: var(--jet_shadow);
+  padding: 55px 25px;
+  background-color: var(--shadow_green_mat);
   border-radius: 3px;
   border: solid 3px var(--hr_gray)
 }
@@ -19,6 +19,7 @@
   font-size: 55px;
   letter-spacing: 2px;
   color: var(--green_pantone);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .free-trial-card h2 {
@@ -29,6 +30,7 @@
 
 .free-trial-form {
   margin-top: 30px;
+  padding: 20px;
 }
 
 .free-trial-form .form-label {
@@ -37,10 +39,10 @@
 }
 
 .free-trial-form .form-control {
-  background-color: var(--graysix);
+  background-color: var(--jet_shadow);
   border-width: 0;
   border-radius: 3px;
-  color: var(--black_light);
+  color: var(--platinium);
 }
 
 .free-trial-form .form-control::placeholder {
@@ -48,17 +50,39 @@
 }
 
 .free-trial-form .btn {
-  background-color: var(--cadmium_green_tra);
+  background-color: var(--green_pantone);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
-  font-size: 18px;
-  color: var(--cultured);
+  font-size: 20px;
+  color: var(--earie_black);
+  letter-spacing: 0.5px;
   font-weight: bold;
-  letter-spacing: 1px;
   transition: .2s;
 }
 
 .free-trial-form .btn:hover {
   background-color: var(--cadmium_green_dark);
   color: var(--platinium);
-  letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 990px) {
+  .free-trial-outer {
+    background-color: var(--shadow_green_mat);
+  }
+  .free-trial-card {
+    background-color: transparent;
+    padding: 20px;
+  }
+  .free-trial-card h1 {
+    font-size: 40px;
+  }
+  .free-trial-card h2 {
+    font-size: 22px;
+  }
+  .free-trial-form {
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+  }
 }

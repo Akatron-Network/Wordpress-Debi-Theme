@@ -4,6 +4,7 @@
   --sea_green: #20834b;
   --cadmium_green: #1a6c3d;
   --shadow_green: #1a6c3d66;
+  --shadow_green_mat: #1a55349f;
   --cadmium_green_tra: #1a6c3e54;
   --cadmium_green_window: #1a6c3ec1;
   --cadmium_green_dark: #185331;
@@ -47,4 +48,7 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
 

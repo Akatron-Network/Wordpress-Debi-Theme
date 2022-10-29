@@ -18,13 +18,12 @@
   #nav .nav-dropdown .list-group-item {
     text-align: right !important;
   }
-}
-
-@media screen and (max-width: 1100px) {
-  #nav .nav-item {
-    width: 160px !important;
+  
+  #nav .navbar-brand {
+    padding: 0 25px !important;
   }
 }
+
 
 #nav {
   padding: 20px 0;
@@ -207,4 +206,8 @@
   top: 5px !important;
   right: 20px;
   transform: scale(0.9);
+}
+
+#nav-stick .navbar-brand {
+  padding-left: 15px;
 }

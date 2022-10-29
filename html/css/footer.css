@@ -1,0 +1,152 @@
+
+
+.footer {
+  background: rgb(35,35,35);
+  background-position: top;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.footer h2 {
+  margin-top: 20px;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 40px;
+  color: var(--green_pantone);
+}
+
+.footer h2 span {
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: var(--cultured);
+}
+
+.footer ul {
+  padding-left: 0px;
+}
+
+.footer li {
+  list-style-type: none;
+  list-style-position: inherit;
+}
+
+.footer li a {
+  color: var(--cultured);
+  text-decoration: none;
+  font-size: 20px;
+  transition: .2s;
+}
+.footer li a:hover {
+  color: var(--platinium);
+}
+
+.footer li span {
+  color: var(--green_pantone)
+}
+
+.footer .adress {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.footer .adress-alt {
+  text-align: right;
+  font-size: 18px;
+}
+
+.footer-social {
+  font-size: 40px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.footer-social a {
+  color: var(--cultured) !important;
+  transition: .2s;
+}
+
+.footer-social a:hover {
+  color: var(--green_pantone) !important;
+}
+
+.footer .copyright {
+  background-color: var(--black_light);
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  color: var(--cultured);
+}
+
+.footer a {
+  color: var(--green_pantone);
+  text-decoration: none;
+}
+
+.footer h1 {
+  font-size: 30px;
+  font-family: "Righteous";
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: var(--cultured);
+}
+
+.footer h1 span {
+  color: var(--green_pantone);
+}
+
+.footer .menu-link {
+  color: var(--cultured);
+  font-size: 20px;
+  transition: .2s;
+}
+
+.footer .menu-link:hover {
+  color: var(--platinium);
+}
+
+.footer .menu-col {
+  padding: 15px 10px;
+}
+
+.footer .ask-col {
+  text-align: right;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+.footer .ask-btn {
+  padding-top: 18px;
+}
+
+.footer .ask-btn .btn-primary {
+  background-color: var(--cadmium_green);
+  border-width: 0;
+  font-size: 18px;
+  border-radius: 3px;
+  transition: .2s;
+  width: 90%;
+}
+
+.footer .ask-btn .btn-primary:hover {
+  background-color: var(--green_pantone);
+}
+
+.footer-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 990px) {
+  .footer {
+    padding-top: 0;
+  }
+  .footer-right {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .footer .ask-col {
+    text-align: center;
+  }
+  .footer .ask-btn {
+    text-align: center;
+  }
+}

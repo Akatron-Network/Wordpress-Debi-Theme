@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeBI</title>
+    <title>DeBI - Yönetim Asistanınız</title>
     <link rel="icon" type="image/x-icon" href="img/ico.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/stage.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/free-trial.css" />
+    <link rel="stylesheet" href="css/supported-platforms.css" />
+    <link rel="stylesheet" href="css/sectoral.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/window.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden">
 
     <!-- -- ON SCROLL NAVBAR -- -->
     <nav
@@ -177,7 +181,11 @@
           </div>
         </div>
         <div class="col-xl-6 stage-anim">
-          <img src="img/stage-screen-anim.png" alt="" />
+          <img id="anim-0" src="img/stage-screen-anim_0.png" alt="" style="transition: .5s; transform: scale(1.2) translateY(20px);">
+          <img id="anim-1" src="img/stage-screen-anim_1.png" alt="" style="position: absolute; width: 0%; left: 10%; top: 11%; transition: 1s; opacity: 0;">
+          <img id="anim-2" src="img/stage-screen-anim_2.png" alt="" style="position: absolute; width: 0%; right: 12.5%; top: 3.5%; transition: 1s; opacity: 0;">
+          <img id="anim-3" src="img/stage-screen-anim_3.png" alt="" style="position: absolute; width: 0%; left: 13%; top: 51%; transition: 1s; opacity: 0;">
+          <img id="anim-4" src="img/stage-screen-anim_4.png" alt="" style="position: absolute; width: 0%; right: 10.5%; top: 44%; transition: 1s; opacity: 0;">
         </div>
       </div>
 
@@ -189,48 +197,51 @@
       </div>
 
     </div>
+    <!-- -- -->
 
     <!-- -- FEATURES -->
     <div class="features-outer">
       <div class="row justify-content-around">
-        <div class="col-xl-4 feature-col">
+        <div class="col-xl-4 col-xs-12 col-6 feature-col">
           <img src="img/Icon_easy-to-use.png" alt="">
           <h2>Kolay Kullanım</h2>
         </div>
-        <div class="col-xl-4 feature-col feature-mid-col feature-passive">
+        <div class="col-xl-4 col-xs-12 col-6 feature-col feature-mid-col feature-passive">
           <img src="img/Icon_real-time.png" alt="">
           <h2>Gerçek Zamanlı</h2>
         </div>
-        <div class="col-xl-4 feature-col feature-passive">
+        <div class="col-xl-4 col-xs-12 col-6 feature-col feature-passive">
           <img src="img/Icon_integrations.png" alt="">
           <h2>Zengin Entegrasyon</h2>
         </div>
       </div>
     </div>
+    <!-- -- -->
 
     <!-- -- FETAURE DETAILS -- -->
     <div class="feature-details-outer">
 
       <div class="feature-details">
 
-        <div class="feature-details-element">
+        <div class="feature-details-element container-fluid">
           <div class="row justify-content-evenly">
             <div class="col-xxl-5 col-xl-5 feature-element-window">
-  
-              <div class="window" id="win" style="left: 0; top: 0;">
-                <div class="window-headbar" id="winheader">
-                  <div class="head-text">
-                    <img src="img/akt-icon.png" alt="">
-                    <h2>DeBI</h2>
+              <div class="feature-window-outer">
+                <div class="window" id="win">
+                  <div class="window-headbar" id="winheader">
+                    <div class="head-text">
+                      <img src="img/akt-icon.png" alt="">
+                      <h2>DeBI</h2>
+                    </div>
+                    <div class="head-icons">
+                      <i class="fa-solid fa-window-minimize"></i>
+                      <i class="fa-solid fa-expand"></i>
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
                   </div>
-                  <div class="head-icons">
-                    <i class="fa-solid fa-window-minimize"></i>
-                    <i class="fa-solid fa-expand"></i>
-                    <i class="fa-solid fa-xmark"></i>
+                  <div class="window-context">
+                    <img src="img/debi-screen-2.png" alt="" style="width: 100%">
                   </div>
-                </div>
-                <div class="window-context">
-                  <img src="img/debi-screen-2.png" alt="" style="width: 100%">
                 </div>
               </div>
   
@@ -256,8 +267,8 @@
 
       </div>
       
-      <div class="free-trial-outer">
-        <div class="row justify-content-center">
+      <div class="free-trial-outer container-fluid">
+        <div class="row justify-content-center" style="width: 100%">
           <div class="col-xxl-5 col-lg-6 col-md-12 free-trial-card">
             <h1>ÜCRETSİZ DENEYİN</h1>
             <h2>Deneme Talebi</h2>
@@ -296,16 +307,173 @@
       <div class="supported-platforms-outer">
         <div class="header">
           <h1>Desteklenen Kaynaklar</h1>
+          <p>Kullanmakta Olduğunuz Programları <span>DeBI</span> Tanıyor!</p>
         </div>
       </div>
 
     </div>
+    <!-- -- -->
+
+    <!-- -- SUPPORTED PLATFORMS -- -->
+    <div class="supported-platforms-details-outer container-fluid">
+      <div class="row align-items-end justify-content-evenly">
+        <div class="col-xl-3 col-sm-6 platform-col">
+          <img src="img/supported_Netsis.png" alt="">
+        </div>
+        <div class="col-xl-3 col-sm-6 platform-col">
+          <img src="img/supported_parasut.png" alt="">
+        </div>
+        <div class="col-xl-3 col-sm-6 platform-col">
+          <img src="img/supported_binance.png" alt="">
+        </div>
+        <div class="col-xl-3 col-sm-6 platform-col">
+          <img src="img/supported_trendyol.png" alt="">
+        </div>
+      </div>
+      <div class="platform-details">
+        <a href="">Detaylı bilgi için tıklayın.</a>
+      </div>
+    </div>
+    <!-- -- -->
+
+    <!-- -- SECTORAL -- -->
+    <div class="sectoral-outer">
+      <div class="container-fluid">
+
+        <h1>HERKES İÇİN VERİ ANALİZİ</h1>
+        <div class="row justify-content-evenly">
+          <div class="col-xxl-3 col-lg-4">
+            <div class="sectoral-col side-col">
+              <h2>Finans</h2>
+              <p>
+                Finansal durumunuzun tüm 
+                detaylarına kolayca erişin ve bu 
+                bilginin ışığında doğru kararlar 
+                alarak riski en aza indirin.
+              </p>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-lg-4">
+            <div class="sectoral-col">
+              <h2>Satış</h2>
+              <p>
+                Finansal durumunuzun tüm 
+                detaylarına kolayca erişin ve bu 
+                bilginin ışığında doğru kararlar 
+                alarak riski en aza indirin.
+              </p>
+          </div>
+          </div>
+          <div class="col-xxl-3 col-lg-4">
+            <div class="sectoral-col side-col">
+              <h2>Üretim</h2>
+              <p>
+                Finansal durumunuzun tüm 
+                detaylarına kolayca erişin ve bu 
+                bilginin ışığında doğru kararlar 
+                alarak riski en aza indirin.
+              </p>
+          </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="">Detaylı bilgi için tıklayın.</a>
+        </div>
+      </div>
+
+
+      <div style="
+        height: 150px; 
+        background: rgb(35,35,35);
+        background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(27,27,27,0) 100%);
+    "></div>
+
+
+    </div>
+    <!-- -- -->
+
+    <!-- -- FOOTER -- -->
+    <footer class="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-6">
+            <img src="img/akt-icon.png" alt="">
+            <h2>AKATRON <span>NETWORK</span></h2>
+            <ul>
+              <li><a href=""><span>info</span>@akatron.net</a></li>
+              <li><a href=""><span>debi</span>@akatron.net</a></li>
+            </ul>
+            <p class="adress">
+              İsmet Kaptan mah. Kasman İş Merkezi 1371 sokak No: 2 Kat: 1 Daire: 109<br>
+            </p>
+            <p class="adress-alt">Çankaya / KONAK / İZMİR</p>
+  
+            <div class="row justify-content-start" style="margin-top: 50px;">
+            
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </div>
+    
+            </div>
+          </div>
+  
+          <div class="col-xl-6 footer-right">
+            <img src="img/debi-icon.png" alt="" style="width: 50%">
+            <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
+            <div class="row">
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Nerde Kullanılır</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Kurumsal</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Fiyatlandırma</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Bilgi Merkezi</a>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-9 ask-col">
+                Sorunuza Cevap Bulamadınız mı?
+              </div>
+              <div class="col-lg-3 ask-btn">
+                <button type="button" class="btn btn-primary">İletişim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="copyright">All Rights Reserved for <a href="http://akatron.net/">Akatron Network</a></div>
+    </footer>
+    <!-- -- -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/window.js"></script>
+    <script src="js/stage.js"></script>
     <script>
       
       window.onload = function () {
