@@ -56,7 +56,6 @@
         </form>
       </div>
     </nav>
-    <!-- -- -->
 
     <!-- -- ON STAGE NACBAR -- -->
     <nav id="nav" class="navbar navbar-expand-lg">
@@ -165,7 +164,6 @@
         </a>
       </div>
     </nav>
-    <!-- -- -->
 
     <!-- -- STAGE -- -->
     <div class="stage-outer">
@@ -197,33 +195,31 @@
       </div>
 
     </div>
-    <!-- -- -->
 
     <!-- -- FEATURES -->
     <div class="features-outer">
       <div class="row justify-content-around">
-        <div class="col-xl-4 col-xs-12 col-6 feature-col">
+        <div id="feature-easy-to-use" class="col-lg-4 col-xs-12 feature-col">
           <img src="img/Icon_easy-to-use.png" alt="">
           <h2>Kolay Kullanım</h2>
         </div>
-        <div class="col-xl-4 col-xs-12 col-6 feature-col feature-mid-col feature-passive">
+        <div id="feature-real-time" class="col-lg-4 col-xs-12 feature-col feature-mid-col feature-passive">
           <img src="img/Icon_real-time.png" alt="">
           <h2>Gerçek Zamanlı</h2>
         </div>
-        <div class="col-xl-4 col-xs-12 col-6 feature-col feature-passive">
+        <div id="feature-integrations" class="col-lg-4 col-xs-12 feature-col feature-passive">
           <img src="img/Icon_integrations.png" alt="">
           <h2>Zengin Entegrasyon</h2>
         </div>
       </div>
     </div>
-    <!-- -- -->
 
     <!-- -- FETAURE DETAILS -- -->
     <div class="feature-details-outer">
 
-      <div class="feature-details">
+      <div class="feature-details" onmouseenter="featureChanger = false;" onmouseleave="featureChanger = true;">
 
-        <div class="feature-details-element container-fluid">
+        <div id="detail-feature-easy-to-use" class="feature-details-element container-fluid">
           <div class="row justify-content-evenly">
             <div class="col-xxl-5 col-xl-5 feature-element-window">
               <div class="feature-window-outer">
@@ -260,6 +256,87 @@
                 için özel destek almasına gerek kalmaksızın DeBI ile raporlar 
                 oluşturabilir ve karar verebilmek için, gerekli temiz bir analizi 
                 gözlemleyebilmesini sağlar.
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-feature-real-time" class="feature-details-element container-fluid" style="opacity: 0;">
+          <div class="row justify-content-evenly">
+            <div class="col-xxl-5 col-xl-5 feature-element-window">
+              <div class="feature-window-outer">
+                <div class="window" id="win2">
+                  <div class="window-headbar" id="winheader">
+                    <div class="head-text">
+                      <img src="img/akt-icon.png" alt="">
+                      <h2>DeBI</h2>
+                    </div>
+                    <div class="head-icons">
+                      <i class="fa-solid fa-window-minimize"></i>
+                      <i class="fa-solid fa-expand"></i>
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                  <div class="window-context">
+                    <img src="img/debi-screen-2.png" alt="" style="width: 100%">
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-xxl-5 col-xl-6 feature-element-text">
+              <h3>Her Zaman Güncel!</h3>
+              <div class="divider"></div>
+              <p>
+                <span class="spacing"></span> DeBI raporlarınızın her zaman son halini görmenizi sağlayarak
+                eski bilgi ile yanlış kararlar almanızı engeller. Rapor sayfalarınız
+                otomatik olarak son verilere göre oluşturulur.
+              </p>
+              <p>
+                <span class="spacing"></span> Pasif eski usül raporların yerine DeBI ile sürekli yeni raporlar
+                oluşturmak zorunda kalmadan aynı rapor sayfalarını güncel olarak
+                görüntüleyebilir günün şartlarına göre hızlıca düzenleyebilirsiniz.
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-feature-integrations" class="feature-details-element container-fluid" style="opacity: 0;">
+          <div class="row justify-content-evenly">
+            <div class="col-xxl-5 col-xl-5 feature-element-window">
+              <div class="feature-window-outer">
+                <div class="window" id="win3">
+                  <div class="window-headbar" id="winheader">
+                    <div class="head-text">
+                      <img src="img/akt-icon.png" alt="">
+                      <h2>DeBI</h2>
+                    </div>
+                    <div class="head-icons">
+                      <i class="fa-solid fa-window-minimize"></i>
+                      <i class="fa-solid fa-expand"></i>
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                  <div class="window-context">
+                    <img src="img/debi-screen-2.png" alt="" style="width: 100%">
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-xxl-5 col-xl-6 feature-element-text">
+              <h3>Uygulamalarınızı Tanır!</h3>
+              <div class="divider"></div>
+              <p>
+                <span class="spacing"></span> DeBI kullanmakta olduğunuz bir çok uygulamayı tanıyarak size daha
+                kolay bir kullanım sağlamak için çeviri ve kısa yollar sunar. Bu
+                destekler sonucunda teknik bilgi gerekmeksizin desteklenen tüm platform
+                ve uygulamaların raporlarını alabilir ve bunları kendi aralarında 
+                karşılaştırabilirsiniz.
+              </p>
+              <p>
+                <span class="spacing"></span> Her geçen gün yeni entegrasyonlar ile kütüphanemizi büyüterek size daha
+                iyi bir hizmet sunmaya çalışıyoruz.
             </p>
             </div>
           </div>
@@ -312,7 +389,6 @@
       </div>
 
     </div>
-    <!-- -- -->
 
     <!-- -- SUPPORTED PLATFORMS -- -->
     <div class="supported-platforms-details-outer container-fluid">
@@ -334,7 +410,6 @@
         <a href="">Detaylı bilgi için tıklayın.</a>
       </div>
     </div>
-    <!-- -- -->
 
     <!-- -- SECTORAL -- -->
     <div class="sectoral-outer">
@@ -390,7 +465,6 @@
 
 
     </div>
-    <!-- -- -->
 
     <!-- -- FOOTER -- -->
     <footer class="footer">
@@ -435,7 +509,7 @@
           </div>
   
           <div class="col-xl-6 footer-right">
-            <img src="img/debi-icon.png" alt="" style="width: 50%">
+            <img src="img/debi-icon.png" alt="" style="width: 40%; margin-top: 20px;">
             <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
             <div class="row">
               <div class="col-lg-6 menu-col">
@@ -451,7 +525,7 @@
                 <a href="" class="menu-link">Bilgi Merkezi</a>
               </div>
             </div>
-            <div class="row mt-3">
+            <div class="row" style="margin-top: 60px">
               <div class="col-lg-9 ask-col">
                 Sorunuza Cevap Bulamadınız mı?
               </div>
@@ -465,7 +539,6 @@
       </div>
       <div class="copyright">All Rights Reserved for <a href="http://akatron.net/">Akatron Network</a></div>
     </footer>
-    <!-- -- -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
@@ -474,10 +547,14 @@
     <script src="js/navbar.js"></script>
     <script src="js/window.js"></script>
     <script src="js/stage.js"></script>
+    <script src="js/features.js"></script>
     <script>
       
       window.onload = function () {
         dragElement(document.getElementById("win"));
+        dragElement(document.getElementById("win2"));
+        dragElement(document.getElementById("win3"));
+        integrateFeatures();
       }
     </script>
   </body>

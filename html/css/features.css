@@ -7,6 +7,13 @@
 .feature-col {
   text-align: center;
   z-index: 1;
+  height: fit-content;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.feature-col:hover {
+  transform: scale(1.03);
 }
 
 .feature-col h2 {
@@ -23,7 +30,7 @@
 }
 
 .feature-mid-col {
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .feature-passive img {
@@ -55,6 +62,9 @@
 
 /* ------------------- */
 
+.feature-details {
+  position: relative;
+}
 
 .feature-details-outer {
   background-image: url('../img/backgrounds/feature-bg.png');
@@ -75,9 +85,9 @@
   height: 100%;
 }
 
-/* .feature-element-text {
-  padding: 20px 0;
-} */
+.feature-element-text {
+  min-height: 500px;
+}
 
 .feature-element-text h3 {
   font-size: 45px;
@@ -122,5 +132,14 @@
   }
   .feature-element-text p {
     font-size: 17px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .feature-element-text {
+    min-height: auto;
   }
 }
