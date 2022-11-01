@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/window.css" />
   </head>
-  <body style="overflow-x: hidden">
+  <body class="light" style="overflow-x: hidden;">
+
+    <!-- -- LOADING SCREEN -- -->
+    <div id="theme-loader"></div>
 
     <!-- -- ON SCROLL NAVBAR -- -->
     <nav
@@ -57,7 +60,7 @@
       </div>
     </nav>
 
-    <!-- -- ON STAGE NACBAR -- -->
+    <!-- -- ON STAGE NAVBAR -- -->
     <nav id="nav" class="navbar navbar-expand-lg">
       <a class="navbar-brand d-lg-none" href="#"
         ><img src="img/debi-icon.png" style="height: 40px"
@@ -71,6 +74,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style="box-shadow: none;"
       >
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -153,6 +157,16 @@
             </div>
           </li>
         </ul>
+
+        <btn
+          id="theme-btn"
+          onclick="themechange()"
+          type="button"
+          class="btn btn-theme d-none d-lg-block"
+        >
+          <i class="fa-solid fa-sun"></i>
+          <span>&nbsp; Açık Tema</span>
+      </btn>
 
         <a
           href="#"
@@ -394,16 +408,16 @@
     <div class="supported-platforms-details-outer container-fluid">
       <div class="row align-items-end justify-content-evenly">
         <div class="col-xl-3 col-sm-6 platform-col">
-          <img src="img/supported_Netsis.png" alt="">
+          <img id="supp_netsis" src="img/supported_Netsis.png" alt="">
         </div>
         <div class="col-xl-3 col-sm-6 platform-col">
-          <img src="img/supported_parasut.png" alt="">
+          <img id="supp_parasut" src="img/supported_parasut.png" alt="">
         </div>
         <div class="col-xl-3 col-sm-6 platform-col">
-          <img src="img/supported_binance.png" alt="">
+          <img id="supp_binance" src="img/supported_binance.png" alt="">
         </div>
         <div class="col-xl-3 col-sm-6 platform-col">
-          <img src="img/supported_trendyol.png" alt="">
+          <img id="supp_trendyol" src="img/supported_trendyol.png" alt="">
         </div>
       </div>
       <div class="platform-details">
@@ -457,11 +471,7 @@
       </div>
 
 
-      <div style="
-        height: 150px; 
-        background: rgb(35,35,35);
-        background: linear-gradient(0deg, rgba(35,35,35,1) 0%, rgba(27,27,27,0) 100%);
-    "></div>
+      <div class="footer-gradient"></div>
 
 
     </div>
@@ -544,17 +554,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/misc.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/window.js"></script>
     <script src="js/stage.js"></script>
     <script src="js/features.js"></script>
     <script>
       
-      window.onload = function () {
+      window.onload = async function () {
         dragElement(document.getElementById("win"));
         dragElement(document.getElementById("win2"));
         dragElement(document.getElementById("win3"));
         integrateFeatures();
+
+        
+        //* Auto Theme Detect
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.getElementsByTagName('body')[0].classList.remove('light');
+        }
+        else {
+          document.getElementsByTagName('body')[0].classList.add('light');
+        }
+
+        //* Close loader
+        await timeout(200)
+        document.getElementById('theme-loader').style.opacity = "0"
+        await timeout(200)
+        document.getElementById('theme-loader').style.display = "none"
       }
     </script>
   </body>

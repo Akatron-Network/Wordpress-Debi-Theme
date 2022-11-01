@@ -1,0 +1,40 @@
+
+.content-outer {
+  background-image: url('../img/backgrounds/content-bg.png');
+  background-size: cover;
+  background-position: center top;
+  padding-bottom: 200px;
+}
+
+.light .content-outer {
+  background-image: url('../img/backgrounds/light-content-bg.png');
+}
+
+.content-outer h2 {
+  color: var(--green_pantone);
+}
+
+.light .content-outer h2 {
+  color: var(--cadmium_green);
+  font-weight: bold;
+}
+
+.content-outer h3 {
+  margin-top: 30px;
+}
+
+.content-outer .divider {
+  background-color: var(--cadmium_green);
+  width: 40%;
+  height: 3px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+}
+.content-outer p {
+  color: var(--cultured);
+}
+
+.light .content-outer p {
+  color: var(--darkest_jet);
+}
+
