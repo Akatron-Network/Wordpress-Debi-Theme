@@ -20,20 +20,20 @@
   margin-bottom: 120px;
 }
 .light .sectoral-outer h1 {
-  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 
 .sectoral-col {
   background-color: var(--darkest_jet);
-  border-radius: 7px;
-  border: solid 3px var(--onyx_middle);
+  border-radius: 0;
+  border: solid 2px var(--onyx_middle);
   padding: 40px;
 }
 
 .light .sectoral-col {
-  background-color: var(--platinium);
-  border: solid 3px var(--cultured);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: solid 2px var(--white);
 }
 
 .sectoral-col h2 {
@@ -91,6 +91,11 @@
   }
   .sectoral-col {
     margin-top: 20px;
+    padding: 20px 30px;
+    background-color: var(--jet_glass);
+  }
+  .light .sectoral-col {
+    background-color: rgba(255, 255, 255, 0.75);
   }
   .sectoral-outer .details {
     margin-top: 60px;
@@ -100,5 +105,6 @@
   }
   .sectoral-col p {
     font-size: 18px;
+    text-align: justify;
   }
 }

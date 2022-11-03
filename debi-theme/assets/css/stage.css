@@ -30,7 +30,7 @@
 
 .light .stage-text .heading {
   color: var(--earie_black);
-  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0);
 }
 
 .stage-text .heading span {
@@ -41,8 +41,8 @@
 }
 
 .light .stage-text .heading span {
-  color: var(--earie_black);
-  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  color: var(--sea_green);
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0);
 }
 
 .stage-text .divider {
@@ -89,13 +89,13 @@
   font-size: 38px;
   font-family: "Righteous";
   letter-spacing: 2px;
-  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 
 .light .stage-feature {
   color: var(--black_light);
-  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0);
 }
 
 .stage-feature span {
@@ -103,7 +103,7 @@
 }
 
 .light .stage-feature span {
-  color: var(--sea_green);
+  color: var(--shadow_green_opak);
 }
 
 
@@ -137,24 +137,38 @@
 
 @media screen and (max-width: 990px) {
   .stage-text {
-    padding-top: 10px;
+    padding: 10px;
   }
   .stage-text .heading {
     font-size: 50px;
     line-height: 55px;
   }
   .stage-text .heading span {
-    font-size: 85px;
-    margin-left: 5px;
-    bottom: 10px;
+    font-size: 75px;
+    margin-left: 0;
+    position: relative;
   }
   .stage-text .details {
     font-size: 18px;
     letter-spacing: 0.5px;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
   }
   .stage-feature {
     font-size: 25px;
+  }
+  .stage-page-title h1 {
+    font-size: 40px;
+  }
+  .stage-page {
+    padding-top: 30px;
+    min-height: 300px;
+  }
+  .stage-anim {
+    padding: 10px;
+    overflow: hidden;
+  }
+  .stage-anim img {
+    width: calc(100% + 10px);
   }
 }
 

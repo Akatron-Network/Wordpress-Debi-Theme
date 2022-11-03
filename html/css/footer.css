@@ -77,6 +77,7 @@
 .footer .adress {
   margin-bottom: 0;
   font-size: 18px;
+  text-align: justify;
 }
 
 .footer .adress-alt {
@@ -193,8 +194,22 @@
   }
   .footer .ask-col {
     text-align: center;
+    font-size: 18px;
+    padding: 10px;
   }
   .footer .ask-btn {
     text-align: center;
+    padding: 10px;
+    padding-top: 0;
+  }
+  .footer .ask-btn .btn-primary {
+    width: 95%;
+  }
+
+  .footer h2 {
+    font-size: 35px;
+  }
+  .footer h2 span {
+    font-size: 25px;
   }
 }

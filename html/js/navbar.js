@@ -33,12 +33,12 @@ addEventListener('load', (e) => {
 
 
 async function themechange() {
-  let body = document.getElementsByTagName('body')[0]
-  let btn = document.getElementById('theme-btn')
-  let tload = document.getElementById('theme-loader')
 
+  let body = document.getElementsByTagName('body')[0]
+  let tload = document.getElementById('theme-loader')
   //* To The Dark side
   if (body.classList.contains('light')) {
+
     tload.style.backgroundColor = "var(--black_light)"
     tload.style.opacity = "0"
     tload.style.display = "block"
@@ -46,14 +46,12 @@ async function themechange() {
     tload.style.opacity = "1"
     await timeout(200)
 
-    body.classList.remove('light')
-    btn.innerHTML = 
-      '<i class="fa-solid fa-sun"></i>' + 
-      '<span>&nbsp; Açık Tema</span>'
+    await setTheme('dark')
       
     tload.style.opacity = "0"
     await timeout(200)
     tload.style.display = "none"
+
   }
 
   //* To The Light side
@@ -64,15 +62,40 @@ async function themechange() {
     await timeout(200)
     tload.style.opacity = "1"
     await timeout(200)
+    
+    await setTheme('light')
+    
+    tload.style.opacity = "0"
+    await timeout(200)
+    tload.style.display = "none"
+  }
+}
+
+async function setTheme(theme = 'dark') {
+  let body = document.getElementsByTagName('body')[0]
+  let btn = document.getElementById('theme-btn')
+  let btnmin = document.getElementById('theme-btn-mini')
+
+  if (theme === 'dark') {
+
+    localStorage.setItem('theme', 'dark')
+
+    body.classList.remove('light')
+    btn.innerHTML = 
+      '<i class="fa-solid fa-sun"></i>' + 
+      '<span>&nbsp; Açık Tema</span>'
+    btnmin.innerHTML = 
+      '<i class="fa-solid fa-sun"></i>'
+  }
+  else {
+    localStorage.setItem('theme', 'light')
 
 
     body.classList.add('light')
     btn.innerHTML = 
       '<i class="fa-solid fa-moon"></i>' + 
       '<span>&nbsp; Koyu Tema</span>'
-    
-    tload.style.opacity = "0"
-    await timeout(200)
-    tload.style.display = "none"
+    btnmin.innerHTML = 
+      '<i class="fa-solid fa-moon"></i>'
   }
 }

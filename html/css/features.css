@@ -26,12 +26,12 @@
 }
 
 .light .feature-col h2 {
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-  color: var(--green_pantone);
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  color: var(--shadow_green_opak);
 }
 
 .light .feature-passive h2 {
-  color: var(--onyx_light);
+  color: var(--black_light);
 }
 
 .feature-col img {
@@ -51,17 +51,39 @@
   color: var(--graysix);
 }
 
+.light .feature-passive img {
+  opacity: 0.5;
+}
 
 
 @media screen and (max-width: 990px) {
+  .features-outer {
+    padding: 25px;
+    padding-top: 50px;
+  }
   .feature-col {
-    margin-top: 20px;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: solid 1px var(--green_pantone);
+    border-radius: 0px;
+    background: linear-gradient(0deg, rgba(20,184,91,0.05) 0%, rgba(27,27,27,0) 31%);
+  }
+  .feature-passive {
+    border-bottom: solid 2px transparent;
+    background: none;
   }
   .feature-col img {
-    height: 50px;
+    height: 40px;
   }
   .feature-col h2 {
-    font-size: 22px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
   }
   .feature-mid-col {
     padding-top: 0px;
@@ -110,7 +132,7 @@
 }
 
 .light .feature-element-text h3 {
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  color: var(--shadow_green_opak);
 }
 
 .feature-element-text .divider {
@@ -119,6 +141,10 @@
   background-color: var(--graysix);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.light .feature-element-text .divider {
+  background-color: var(--black_light);
 }
 
 .feature-element-text p {
@@ -145,7 +171,7 @@
     margin-top: 20px;
   }
   .feature-element-text h3 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
   .feature-element-text .divider {
@@ -153,6 +179,13 @@
   }
   .feature-element-text p {
     font-size: 17px;
+    text-align: justify;
+  }
+  .feature-details-element {
+    height: 750px;
+  }
+  .feature-details {
+    overflow-x: hidden;
   }
   
 }

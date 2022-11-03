@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeBI - Yönetim Asistanınız</title>
+  <link rel="icon" type="image/x-icon" href="img/ico.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/stage.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  
+    <!-- -- LOADING SCREEN -- -->
+    <div id="theme-loader"></div>
+
+    <!-- -- ON SCROLL NAVBAR -- -->
+    <nav
+      id="nav-stick"
+      class="navbar navbar-expand-lg d-none d-lg-block sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/debi-icon.png" style="height: 30px"
+        /></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nerde Kullanılır</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fiyatlandırma</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bilgi Merkezi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kurumsal</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <button class="btn btn-login btn-login-active" type="submit">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>&nbsp; Giriş Yap</span>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- -- ON STAGE NAVBAR -- -->
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <a class="navbar-brand d-lg-none" href="#"
+        ><img src="img/debi-icon.png" style="height: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        onclick="$('.navbar-collapse').collapse('toggle'); document.getElementById('nav').classList.toggle('nav-collapse-bg')"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="box-shadow: none;"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item d-lg-none" style="background: transparent">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> &nbsp; Giriş Yap</a
+            >
+          </li>
+
+          <li class="nav-item dropable">
+            <a class="nav-link" href="#">Nerde Kullanılır</a>
+            <div class="nav-dropdown">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Departmanlar</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Endüstriler</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Teknolojiler</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" style="background: transparent">
+            <a class="nav-link" href="#">Fiyatlandırma</a>
+          </li>
+
+          <a class="d-none d-lg-block navbar-mid-brand" href="#">
+            <img src="img/debi-icon.png" />
+            <div class="navbar-mid-heading">
+              Designable Business Intelligence
+            </div>
+          </a>
+
+          <li class="nav-item dropable">
+            <a class="nav-link" href="#">Bilgi Merkezi</a>
+            <div class="nav-dropdown">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Kullanmaya Başlayın</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Bayiler</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Eğitim & Dersler</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Blog</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Dökümanlar</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Akatron Akademi</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropable">
+            <a class="nav-link" href="#">Kurumsal</a>
+            <div class="nav-dropdown">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Akatron Network</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Kariyer</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >İletişim</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <btn
+          id="theme-btn"
+          onclick="themechange()"
+          type="button"
+          class="btn btn-theme d-none d-lg-block"
+        >
+          <i class="fa-solid fa-sun"></i>
+          <span>&nbsp; Açık Tema</span>
+      </btn>
+
+        <a
+          href="#"
+          type="button"
+          class="btn btn-login btn-login-active d-none d-lg-block"
+        >
+          <i class="fa-solid fa-user-tie"></i>
+          <span>&nbsp; Giriş Yap</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- -- STAGE -- -->
+    <div class="stage-outer stage-page">
+
+      <!--* STAGE BOTTOM HEADINGS -->
+      <div class="stage-page-title">
+          <h1>Fiyatlandırma</h1>
+      </div>
+
+    </div>
+
+    <!-- -- PAKETLER -->
+    <div class="content-outer">
+      <div class="container">
+        <div class="zoom-out">
+          <div class="row">
+          
+            <!--* ECO -->
+            <div class="col-lg-4">
+              <div class="pricing-card pricing-eco">
+  
+                <div class="pricing-head">
+                  <h1>EKONOMİK</h1>
+                  <p>PAKET</p>
+                  <h2>000,00 ₺</h2>
+                  <h3>Kullanıcı / Ay *</h3>
+                </div>
+  
+                <div class="pricing-content">
+                  <p>
+                    Canlı raporlar oluşturarak verilerinizi
+                    analiz edin. Hazır şemaları ve entegrasyonlardan faydalanın.
+                  </p>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <table class="table pricing-table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2">1 Ay Ücretsiz Teknik Destek *</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Sınırsız Dökümantasyon Erişimi</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Kurulum Desteği *</td>
+                      </tr>
+                      <tr>
+                        <td>Koleksiyon</td>
+                        <td class="val-col">1 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Klasör</td>
+                        <td class="val-col">1 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Sayfa</td>
+                        <td class="val-col">1 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Disk Boyutu</td>
+                        <td class="val-col">2 GB</td>
+                      </tr>
+                      <tr>
+                        <td style="border-width: 0">Bant Genişliği</td>
+                        <td style="border-width: 0" class="val-col">512 MB</td>
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <div class="buy-div">
+                    <a name="" id="" class="btn" href="#" role="button">SATIN AL</a>
+                  </div>
+  
+                  <p class="details"><span>*</span> Fiyatlar ve işaretli hizmetler yıllık alım için geçerlidir.</p>
+                  <p class="details"><span>**</span> Aylık alım için fiyatlandırma: 000,00 ₺</p>
+  
+                </div>
+  
+              </div>
+            </div>
+  
+            <!--* STANDART -->
+            <div class="col-lg-4">
+              <div class="pricing-card pricing-standart">
+  
+                <div class="pricing-head">
+                  <h1>STANDART</h1>
+                  <p>PAKET</p>
+                  <h2>000,00 ₺</h2>
+                  <h3>Kullanıcı / Ay *</h3>
+                </div>
+  
+                <div class="pricing-content">
+                  <p>
+                    Bir çok canlı rapor oluşturun. İstediğiniz kullanıcı ile paylaşın ve
+                    paylaşımlarınızın yetkilerini belirleyin!
+                  </p>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <table class="table pricing-table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2">1 Ay Ücretsiz Teknik Destek *</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Sınırsız Dökümantasyon Erişimi</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Kurulum Desteği *</td>
+                      </tr>
+                      <tr>
+                        <td>Koleksiyon</td>
+                        <td class="val-col">1 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Klasör</td>
+                        <td class="val-col">5 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Sayfa</td>
+                        <td class="val-col">10 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Disk Boyutu</td>
+                        <td class="val-col">5 GB</td>
+                      </tr>
+                      <tr>
+                        <td style="border-width: 0">Bant Genişliği</td>
+                        <td style="border-width: 0" class="val-col">1 GB</td>
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <div class="buy-div">
+                    <a name="" id="" class="btn" href="#" role="button">SATIN AL</a>
+                  </div>
+  
+                  <p class="details"><span>*</span> Fiyatlar ve işaretli hizmetler yıllık alım için geçerlidir.</p>
+                  <p class="details"><span>**</span> Aylık alım için fiyatlandırma: 000,00 ₺</p>
+  
+                </div>
+  
+              </div>
+            </div>
+  
+            <!--* ENTERPRISE -->
+            <div class="col-lg-4">
+              <div class="pricing-card pricing-enterprise">
+  
+                <div class="pricing-head">
+                  <h1>GELİŞMİŞ</h1>
+                  <p>PAKET</p>
+                  <h2>000,00 ₺</h2>
+                  <h3>Kullanıcı / Ay *</h3>
+                </div>
+  
+                <div class="pricing-content">
+                  <p>
+                    Birçok veritabanı ile birleşik koleksiyonlar oluşturun, raporlarınızı paylaşın,
+                    raporlar arası geçiş düğmeleri ve sunum araçları ile gelişmiş bir analize sahip olun.
+                  </p>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <table class="table pricing-table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2">3 Ay Ücretsiz Teknik Destek *</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Sınırsız Dökümantasyon Erişimi</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Kurulum Desteği *</td>
+                      </tr>
+                      <tr>
+                        <td>Koleksiyon</td>
+                        <td class="val-col">5 Ad.</td>
+                      </tr>
+                      <tr>
+                        <td>Klasör</td>
+                        <td class="val-col">Sınırsız</td>
+                      </tr>
+                      <tr>
+                        <td>Sayfa</td>
+                        <td class="val-col">Sınırsız</td>
+                      </tr>
+                      <tr>
+                        <td>Disk Boyutu</td>
+                        <td class="val-col">20 GB</td>
+                      </tr>
+                      <tr>
+                        <td style="border-width: 0">Bant Genişliği</td>
+                        <td style="border-width: 0" class="val-col">5 GB</td>
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  <div class="pricing-divider"></div>
+  
+                  <div class="buy-div">
+                    <a name="" id="" class="btn" href="#" role="button">SATIN AL</a>
+                  </div>
+  
+                  <p class="details"><span>*</span> Fiyatlar ve işaretli hizmetler yıllık alım için geçerlidir.</p>
+                  <p class="details"><span>**</span> Aylık alım için fiyatlandırma: 000,00 ₺</p>
+  
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>  
+      
+      </div>
+    </div>
+
+    <!-- -- FOOTER -- -->
+    <footer class="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-6">
+            <img src="img/akt-icon.png" alt="">
+            <h2>AKATRON <span>NETWORK</span></h2>
+            <ul>
+              <li><a href=""><span>info</span>@akatron.net</a></li>
+              <li><a href=""><span>debi</span>@akatron.net</a></li>
+            </ul>
+            <p class="adress">
+              İsmet Kaptan mah. Kasman İş Merkezi 1371 sokak No: 2 Kat: 1 Daire: 109<br>
+            </p>
+            <p class="adress-alt">Çankaya / KONAK / İZMİR</p>
+  
+            <div class="row justify-content-start" style="margin-top: 50px;">
+            
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              
+              <div class="footer-social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </div>
+    
+            </div>
+          </div>
+  
+          <div class="col-xl-6 footer-right">
+            <img src="img/debi-icon.png" alt="" style="width: 40%; margin-top: 20px;">
+            <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
+            <div class="row">
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Nerde Kullanılır</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Kurumsal</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Fiyatlandırma</a>
+              </div>
+              <div class="col-lg-6 menu-col">
+                <a href="" class="menu-link">Bilgi Merkezi</a>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 60px">
+              <div class="col-lg-9 ask-col">
+                Sorunuza Cevap Bulamadınız mı?
+              </div>
+              <div class="col-lg-3 ask-btn">
+                <button type="button" class="btn btn-primary">İletişim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="copyright">All Rights Reserved for <a href="http://akatron.net/">Akatron Network</a></div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+      
+      
+      window.onload = async function () {
+        //* Auto Theme Detect
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.getElementsByTagName('body')[0].classList.remove('light');
+        }
+        else {
+          document.getElementsByTagName('body')[0].classList.add('light');
+        }
+
+        //* Close loader
+        await timeout(200)
+        document.getElementById('theme-loader').style.opacity = "0"
+        await timeout(200)
+        document.getElementById('theme-loader').style.display = "none"
+      }
+    </script>
+</body>
+</html>

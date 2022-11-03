@@ -45,7 +45,7 @@
   background-color: var(--black_light) !important;
 }
 
-.light #nav .nav-collapse-bg, .nav-collapse-bg .navbar-collapse {
+.light #nav .nav-collapse-bg, .light .nav-collapse-bg .navbar-collapse {
   background-color: rgb(252, 252, 252) !important;
 }
 
@@ -249,6 +249,11 @@
   box-shadow: 0 0 17px 3px var(--green_pantone);
 }
 
+.light .btn-login-active {
+  background-color: var(--white);
+  color: var(--cadmium_green) !important;
+}
+
 .btn-login-active span {
   opacity: 1;
 }
@@ -292,6 +297,21 @@
   opacity: 1;
 }
 
+.btn-mini-theme {
+  font-size: 18px;
+  border-width: 0 !important;
+  width: 45px;
+  transition: .3s;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: absolute;
+  right: 47px;
+  top: 22px;
+}
+
+.btn-mini-theme:hover {
+  background-color: transparent !important;
+}
 
 @media screen and (max-width: 1220px) {
   .btn-login {

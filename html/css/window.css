@@ -12,6 +12,11 @@
   z-index: 2;
 }
 
+.light .window {
+  background-color: var(--sea_green);
+  color: var(--white);
+  box-shadow: 1px 5px 20px 4px rgb(0 0 0 / 20%);
+}
 
 .window-headbar {
   display: flex;

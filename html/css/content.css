@@ -38,3 +38,12 @@
   color: var(--darkest_jet);
 }
 
+.zoom-out {
+  transform: scale(0.9)
+}
+
+@media screen and (max-width: 990px) {
+  .zoom-out {
+    transform: none;
+  }
+}

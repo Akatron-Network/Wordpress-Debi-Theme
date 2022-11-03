@@ -43,7 +43,7 @@
     </div>
 
     <div class="col-xl-6 footer-right">
-      <img src="<?php echo get_template_directory_uri().'/assets/'; ?>img/debi-icon.png" alt="" style="width: 40%; margin-top: 20px;">
+      <img src="<?php echo get_template_directory_uri().'/assets/'; ?>img/debi-icon.png" alt="" style="width: 40%;">
       <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
       <div class="row">
         <div class="col-lg-6 menu-col">
@@ -59,7 +59,7 @@
           <a href="" class="menu-link">Bilgi Merkezi</a>
         </div>
       </div>
-      <div class="row" style="margin-top: 60px">
+      <div class="row ask-row">
         <div class="col-lg-9 ask-col">
           Sorunuza Cevap Bulamadınız mı?
         </div>
@@ -85,16 +85,28 @@
 <script src="<?php echo get_template_directory_uri().'/assets/'; ?>js/features.js"></script>
 <script>
 
-window.onload = async function () {
-
-  
-  //* Auto Theme Detect
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.getElementsByTagName('body')[0].classList.remove('light');
+async function themeDetect() {
+  if (localStorage.getItem('theme') === null) {
+    //* Auto Theme Detect
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      await setTheme('dark')
+    }
+    else {
+      await setTheme('light')
+    }
   }
   else {
-    document.getElementsByTagName('body')[0].classList.add('light');
+    if (localStorage.getItem('theme') === 'dark') { await setTheme('dark'); }
+    else {   
+      document.getElementById('theme-loader').style.backgroundColor = "var(--platinium)"
+      await setTheme('light');
+    }
   }
+}
+
+window.onload = async function () {
+
+  await themeDetect()
 
   //* Close loader
   await timeout(200)

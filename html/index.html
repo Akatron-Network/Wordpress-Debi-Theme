@@ -32,22 +32,22 @@
       class="navbar navbar-expand-lg d-none d-lg-block sticky-top"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           ><img src="img/debi-icon.png" style="height: 30px"
         /></a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nerde Kullanılır</a>
+              <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fiyatlandırma</a>
+              <a class="nav-link" href="/fiyatlandirma/">Fiyatlandırma</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bilgi Merkezi</a>
+              <a class="nav-link" href="/kullanmaya-baslayin/">Bilgi Merkezi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kurumsal</a>
+              <a class="nav-link" href="https://akatron.net/">Kurumsal</a>
             </li>
           </ul>
         </div>
@@ -65,6 +65,9 @@
       <a class="navbar-brand d-lg-none" href="#"
         ><img src="img/debi-icon.png" style="height: 40px"
       /></a>
+      <button id="theme-btn-mini" type="button" onclick="themechange()" class="btn d-lg-none btn-mini-theme">
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <button
         class="navbar-toggler"
         onclick="$('.navbar-collapse').collapse('toggle'); document.getElementById('nav').classList.toggle('nav-collapse-bg')"
@@ -211,17 +214,17 @@
     </div>
 
     <!-- -- FEATURES -->
-    <div class="features-outer">
+    <div class="features-outer"  onmouseenter="featureChanger = false;" onmouseleave="featureChanger = true;">
       <div class="row justify-content-around">
-        <div id="feature-easy-to-use" class="col-lg-4 col-xs-12 feature-col">
+        <div id="feature-easy-to-use" class="col-4 feature-col">
           <img src="img/Icon_easy-to-use.png" alt="">
           <h2>Kolay Kullanım</h2>
         </div>
-        <div id="feature-real-time" class="col-lg-4 col-xs-12 feature-col feature-mid-col feature-passive">
+        <div id="feature-real-time" class="col-4 feature-col feature-mid-col feature-passive">
           <img src="img/Icon_real-time.png" alt="">
           <h2>Gerçek Zamanlı</h2>
         </div>
-        <div id="feature-integrations" class="col-lg-4 col-xs-12 feature-col feature-passive">
+        <div id="feature-integrations" class="col-4 feature-col feature-passive">
           <img src="img/Icon_integrations.png" alt="">
           <h2>Zengin Entegrasyon</h2>
         </div>
@@ -393,7 +396,7 @@
         </div>
       </div>
 
-      <div style="height: 200px"></div>
+      <div id="supported-pad"></div>
 
       <div class="supported-platforms-outer">
         <div class="header">
@@ -492,7 +495,7 @@
               İsmet Kaptan mah. Kasman İş Merkezi 1371 sokak No: 2 Kat: 1 Daire: 109<br>
             </p>
             <p class="adress-alt">Çankaya / KONAK / İZMİR</p>
-  
+
             <div class="row justify-content-start" style="margin-top: 50px;">
             
               <div class="footer-social">
@@ -514,12 +517,12 @@
               <div class="footer-social">
                 <a href=""><i class="fa-brands fa-github"></i></a>
               </div>
-    
+
             </div>
           </div>
-  
+
           <div class="col-xl-6 footer-right">
-            <img src="img/debi-icon.png" alt="" style="width: 40%; margin-top: 20px;">
+            <img src="img/debi-icon.png" alt="" style="width: 40%;">
             <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
             <div class="row">
               <div class="col-lg-6 menu-col">
@@ -535,7 +538,7 @@
                 <a href="" class="menu-link">Bilgi Merkezi</a>
               </div>
             </div>
-            <div class="row" style="margin-top: 60px">
+            <div class="row ask-row">
               <div class="col-lg-9 ask-col">
                 Sorunuza Cevap Bulamadınız mı?
               </div>
@@ -561,20 +564,32 @@
     <script src="js/features.js"></script>
     <script>
       
+      async function themeDetect() {
+        if (localStorage.getItem('theme') === null) {
+          //* Auto Theme Detect
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            await setTheme('dark')
+          }
+          else {
+            await setTheme('light')
+          }
+        }
+        else {
+          if (localStorage.getItem('theme') === 'dark') { await setTheme('dark'); }
+          else {   
+            document.getElementById('theme-loader').style.backgroundColor = "var(--platinium)"
+            await setTheme('light');
+          }
+        }
+      }
+
       window.onload = async function () {
         dragElement(document.getElementById("win"));
         dragElement(document.getElementById("win2"));
         dragElement(document.getElementById("win3"));
         integrateFeatures();
 
-        
-        //* Auto Theme Detect
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.getElementsByTagName('body')[0].classList.remove('light');
-        }
-        else {
-          document.getElementsByTagName('body')[0].classList.add('light');
-        }
+        await themeDetect();
 
         //* Close loader
         await timeout(200)

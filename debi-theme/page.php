@@ -15,7 +15,11 @@
 <!-- -- PAGE CONTENT -->
 <div class="content-outer">
   <div class="container">
-    <?php the_excerpt(); ?>
+    <?php
+    $current_page = get_queried_object();
+    $content      = apply_filters( 'the_content', $current_page->post_content );
+    echo $content;
+ //the_excerpt(); ?>
   </div>
 </div>
 

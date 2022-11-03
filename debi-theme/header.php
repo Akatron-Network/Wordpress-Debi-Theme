@@ -13,6 +13,7 @@
   ?>
   
   <title><?php wp_title(''); ?></title>
+  <link rel="icon" type="<?php echo get_template_directory_uri().'/assets/'; ?>image/x-icon" href="img/ico.ico" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/navbar.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/stage.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/content.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/pricing.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/features.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/free-trial.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/supported-platforms.css" />
@@ -49,16 +51,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nerde Kullanılır</a>
+              <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fiyatlandırma</a>
+              <a class="nav-link" href="/fiyatlandirma/">Fiyatlandırma</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bilgi Merkezi</a>
+              <a class="nav-link" href="/kullanmaya-baslayin/">Bilgi Merkezi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kurumsal</a>
+              <a class="nav-link" href="https://akatron.net/">Kurumsal</a>
             </li>
           </ul>
         </div>
@@ -73,9 +75,13 @@
 
     <!-- -- ON STAGE NAVBAR -- -->
     <nav id="nav" class="navbar navbar-expand-lg">
-      <a class="navbar-brand d-lg-none" href="#"
+      <a class="navbar-brand d-lg-none" href="/"
         ><img src="<?php echo get_template_directory_uri().'/assets/'; ?>img/debi-icon.png" style="height: 40px"
       /></a>
+      
+      <button id="theme-btn-mini" type="button" onclick="themechange()" class="btn d-lg-none btn-mini-theme">
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <button
         class="navbar-toggler"
         onclick="$('.navbar-collapse').collapse('toggle'); document.getElementById('nav').classList.toggle('nav-collapse-bg')"
@@ -98,7 +104,7 @@
           </li>
 
           <li class="nav-item dropable">
-            <a class="nav-link" href="#">Nerde Kullanılır</a>
+            <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
             <div class="nav-dropdown">
               <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action"
@@ -115,7 +121,7 @@
           </li>
 
           <li class="nav-item" style="background: transparent">
-            <a class="nav-link" href="#">Fiyatlandırma</a>
+            <a class="nav-link" href="/fiyatlandirma/">Fiyatlandırma</a>
           </li>
 
           <a class="d-none d-lg-block navbar-mid-brand" href="/">
@@ -126,7 +132,7 @@
           </a>
 
           <li class="nav-item dropable">
-            <a class="nav-link" href="#">Bilgi Merkezi</a>
+            <a class="nav-link" href="/kullanmaya-baslayin/">Bilgi Merkezi</a>
             <div class="nav-dropdown">
               <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action"
@@ -144,7 +150,7 @@
                 <a href="#" class="list-group-item list-group-item-action"
                   >Dökümanlar</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="https://www.akatron.net/category/academy/" class="list-group-item list-group-item-action"
                   >Akatron Akademi</a
                 >
               </div>
@@ -155,13 +161,13 @@
             <a class="nav-link" href="#">Kurumsal</a>
             <div class="nav-dropdown">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="https://akatron.net/" class="list-group-item list-group-item-action"
                   >Akatron Network</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="https://akatron.net/kariyer/" class="list-group-item list-group-item-action"
                   >Kariyer</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="https://akatron.net/iletisim/" class="list-group-item list-group-item-action"
                   >İletişim</a
                 >
               </div>

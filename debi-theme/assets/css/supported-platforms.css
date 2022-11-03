@@ -85,6 +85,9 @@
   color: var(--black_light);
 }
 
+#supported-pad {
+  height: 200px;
+}
 
 
 @media screen and (max-width: 990px) {
@@ -92,8 +95,9 @@
     margin-top: 0;
   }
   .supported-platforms-outer .header h1 {
-    font-size: 35px;
+    font-size: 45px;
     letter-spacing: 0.5px;
+    margin-bottom: 30px;
   }
   .supported-platforms-outer .header p {
     font-size: 18px;
@@ -101,9 +105,14 @@
   }
   .supported-platforms-details-outer .platform-col {
     padding: 0;
+    padding-bottom: 20px;
   }
   .supported-platforms-details-outer .platform-col img {
     width: 60%
+  }
+  
+  #supported-pad {
+    height: 100px;
   }
 }
 
