@@ -107,13 +107,13 @@
             <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
             <div class="nav-dropdown">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="/nerede-kullanilir/#for-departments" class="list-group-item list-group-item-action"
                   >Departmanlar</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Endüstriler</a
+                <a href="/nerede-kullanilir/#for-sectores" class="list-group-item list-group-item-action"
+                  >Sektörler</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="/nerede-kullanilir/#for-technologies" class="list-group-item list-group-item-action"
                   >Teknolojiler</a
                 >
               </div>
