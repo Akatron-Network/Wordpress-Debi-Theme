@@ -65,10 +65,10 @@
           </ul>
         </div>
         <form class="d-flex">
-          <button class="btn btn-login btn-login-active" type="submit">
+          <a href="http://debiapi.akatron.net:3000/giris" class="btn btn-login btn-login-active" type="submit">
             <i class="fa-solid fa-user-tie"></i>
             <span>&nbsp; Giriş Yap</span>
-          </button>
+          </a>
         </form>
       </div>
     </nav>
@@ -98,7 +98,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item d-lg-none" style="background: transparent">
-            <a class="nav-link" href="#"
+            <a href="http://debiapi.akatron.net:3000/giris" class="nav-link" href="#"
               ><i class="fa-solid fa-right-to-bracket"></i> &nbsp; Giriş Yap</a
             >
           </li>
@@ -186,7 +186,7 @@
       </btn>
 
         <a
-          href="#"
+          href="http://debiapi.akatron.net:3000/giris"
           type="button"
           class="btn btn-login btn-login-active d-none d-lg-block"
         >
