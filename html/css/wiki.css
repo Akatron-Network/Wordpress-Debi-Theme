@@ -1,0 +1,20 @@
+/* WIKI CSS */
+
+.content-area {
+  background-image: url(../img/backgrounds/content-bg.png);
+  background-size: cover;
+  background-position: center top;
+}
+
+.site-main {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.wedocs-single-wrap {
+  background-color: rgba(31,31,31,0.8);
+}
+
+@media screen and (max-width: 1220px) {
+  
+}

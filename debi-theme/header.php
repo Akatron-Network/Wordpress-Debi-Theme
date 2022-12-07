@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/sectoral.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/footer.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/window.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/'; ?>css/wiki.css" />
   <?php wp_head(); ?>
 </head>
 
@@ -57,7 +58,7 @@
               <a class="nav-link" href="/fiyatlandirma/">Fiyatlandırma</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/kullanmaya-baslayin/">Bilgi Merkezi</a>
+              <a class="nav-link" href="/docs/debi-turkce/baslangic/">Bilgi Merkezi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://akatron.net/">Kurumsal</a>
@@ -132,22 +133,22 @@
           </a>
 
           <li class="nav-item dropable">
-            <a class="nav-link" href="/kullanmaya-baslayin/">Bilgi Merkezi</a>
+            <a class="nav-link" href="/docs/debi-turkce/baslangic/">Bilgi Merkezi</a>
             <div class="nav-dropdown">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="/docs/debi-turkce/baslangic/" class="list-group-item list-group-item-action"
                   >Kullanmaya Başlayın</a
                 >
                 <a href="#" class="list-group-item list-group-item-action"
                   >Bayiler</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="/docs/debi-turkce/baslangic/" class="list-group-item list-group-item-action"
                   >Eğitim & Dersler</a
                 >
                 <a href="#" class="list-group-item list-group-item-action"
                   >Blog</a
                 >
-                <a href="#" class="list-group-item list-group-item-action"
+                <a href="/docs/debi-turkce/baslangic/" class="list-group-item list-group-item-action"
                   >Dökümanlar</a
                 >
                 <a href="https://www.akatron.net/category/academy/" class="list-group-item list-group-item-action"
