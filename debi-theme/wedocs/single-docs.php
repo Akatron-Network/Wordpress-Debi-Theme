@@ -15,11 +15,29 @@ addEventListener('load', (e) => {
     addEventListener('scroll', function(event) {
         event.stopImmediatePropagation();
     }, true);
+    addEventListener('resize', function(event) {
+        if (window.innerWidth < 992) {
+            document.getElementById('nav').style.display = '';
+            document.getElementById('main').style.paddingTop = '70px';
+        }
+        else {
+            document.getElementById('nav').style.display = 'none';
+            document.getElementById('main').style.paddingTop = '';
+        }
+    }, true)
     document.getElementById('nav-stick').style.height = '60px';
     document.getElementById('nav-stick').style.paddingTop = '2px';
     document.getElementById('nav-stick').style.background = 'var(--cadmium_green_dark)';
     document.querySelector("#nav-stick > div > form > a").style.marginTop = '5px';
-    document.getElementById('nav').remove()
+
+    document.getElementById('theme-btn-mini').remove();
+    document.getElementById('nav').style.marginTop = '-20px';
+    if (window.innerWidth >= 992) {
+        document.getElementById('nav').style.display = 'none';
+    }
+    else {
+        document.getElementById('main').style.paddingTop = '70px';
+    }
     document.styleSheets[document.styleSheets.length - 1].insertRule(".nav-link { color: white !important;}", 0);
   }, 100)
 })

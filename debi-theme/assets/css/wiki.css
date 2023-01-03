@@ -13,12 +13,18 @@
 }
 
 .wedocs-single-wrap {
-  background-color: rgba(31,31,31,0.8);
+  background-color: rgba(31,31,31,0.9);
 }
 
 .content-area h1 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.content-area h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .content-area h3 {
@@ -40,7 +46,7 @@
 }
 
 .doc-nav-list a {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .article-child {
@@ -92,6 +98,25 @@ kbd {
   color: var(--platinium) !important;
 }
 
-@media screen and (max-width: 1220px) {
+.wedocs-single-wrap .wedocs-single-content article .entry-content img {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.wp-block-image .aligncenter>figcaption {
+  margin-top: -20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
   
+  .wedocs-single-wrap .wedocs-sidebar {
+    width: 20% !important;
+  }
+
+  .wedocs-single-wrap .wedocs-single-content {
+    width: 80% !important;
+  }
 }
