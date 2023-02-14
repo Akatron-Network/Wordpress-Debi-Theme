@@ -1,7 +1,7 @@
 
 
 .supported-platforms-outer {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .supported-platforms-outer .header h1 {
@@ -20,7 +20,7 @@
 
 .supported-platforms-outer .header p {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 2px;
   margin-top: -10px;
   padding-bottom: 80px;
@@ -42,11 +42,10 @@
 
 
 .supported-platforms-details-outer {
-  background-image: url('../img/backgrounds/supported-bg.png');
+  /* background-image: url('../img/backgrounds/supported-bg.png'); */
   background-size: cover;
   background-position: center top;
-  margin-top: -350px;
-  padding-top: 350px;
+  margin-top: -80px;
 
 }
 
@@ -55,18 +54,19 @@
 }
 
 .supported-platforms-details-outer .platform-col {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
+  z-index: 99;
 }
 
 
 .supported-platforms-details-outer .platform-col img {
-  width: 85%;
+  width: 90%;
 }
 
 .supported-platforms-details-outer .platform-details {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .supported-platforms-details-outer .platform-details a {
   color: var(--green_pantone);

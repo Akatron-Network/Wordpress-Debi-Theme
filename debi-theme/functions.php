@@ -46,4 +46,24 @@ add_filter( 'get_terms_orderby', function( $orderby, $qv, $taxonomy )
 
     return $orderby;
 }, 10, 3 );
+
+function my_phpmailer_example( $phpmailer ) {
+	$phpmailer->isSMTP();     
+	$phpmailer->Host = 'mail.akatron.net';
+	$phpmailer->SMTPAuth = true; // Ask it to use authenticate using the Username and Password properties
+	$phpmailer->Port = 587;
+	$phpmailer->Username = 'debi@akatron.net';
+	$phpmailer->Password = '';
+
+	// Additional settings…
+	$phpmailer->SMTPSecure = 'tls'; // Choose 'ssl' for SMTPS on port 465, or 'tls' for SMTP+STARTTLS on port 25 or 587
+	$phpmailer->From = "debi@akatron.net";
+	$phpmailer->FromName = "DEBI";
+}
+add_action( 'phpmailer_init', 'my_phpmailer_example' );
+
+function wpse27856_set_content_type(){
+	return "text/html";
+}
+add_filter( 'wp_mail_content_type','wpse27856_set_content_type' );
 ?>

@@ -194,6 +194,9 @@
             Anlaşılır ve sadeleştirilmiş <b>pivot tablolar, grafikler</b> ve bir
             çok panel çeşidine sahip anlık raporlar ile doğru kararlar verin!
           </div>
+          <div style="text-align: right;">
+            <a href="#free-trial" type="button" class="btn btn-try">Ücretsiz Dene!</a>
+          </div>
         </div>
         <div class="col-xl-6 stage-anim">
           <img id="anim-0" src="img/stage-screen-anim_0.png" alt="" style="transition: .5s; transform: scale(1.2) translateY(20px);">
@@ -214,19 +217,21 @@
     </div>
 
     <!-- -- FEATURES -->
-    <div class="features-outer"  onmouseenter="featureChanger = false;" onmouseleave="featureChanger = true;">
-      <div class="row justify-content-around">
-        <div id="feature-easy-to-use" class="col-4 feature-col">
-          <img src="img/Icon_easy-to-use.png" alt="">
-          <h2>Kolay Kullanım</h2>
-        </div>
-        <div id="feature-real-time" class="col-4 feature-col feature-mid-col feature-passive">
-          <img src="img/Icon_real-time.png" alt="">
-          <h2>Gerçek Zamanlı</h2>
-        </div>
-        <div id="feature-integrations" class="col-4 feature-col feature-passive">
-          <img src="img/Icon_integrations.png" alt="">
-          <h2>Zengin Entegrasyon</h2>
+    <div class="container">
+      <div class="features-outer"  onmouseenter="featureChanger = false;" onmouseleave="featureChanger = true;">
+        <div class="row justify-content-around">
+          <div id="feature-real-time" class="col-4 feature-col">
+            <img src="img/Icon_real-time.png" alt="">
+            <h2>Gerçek Zamanlı</h2>
+          </div>
+          <div id="feature-easy-to-use" class="col-4 feature-col feature-passive">
+            <img src="img/Icon_easy-to-use.png" alt="">
+            <h2>Kolay Kullanım</h2>
+          </div>
+          <div id="feature-integrations" class="col-4 feature-col feature-passive">
+            <img src="img/Icon_integrations.png" alt="">
+            <h2>Zengin Entegrasyon</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -252,7 +257,7 @@
                       <i class="fa-solid fa-xmark"></i>
                     </div>
                   </div>
-                  <div class="window-context">
+                  <div onclick="img_modal('debi-screen-4')" class="window-context">
                     <img src="img/debi-screen-4.png" alt="" style="width: 100%">
                   </div>
                 </div>
@@ -273,7 +278,12 @@
                 için özel destek almasına gerek kalmaksızın DeBI ile raporlar 
                 oluşturabilir ve karar verebilmek için, gerekli temiz bir analizi 
                 gözlemleyebilmesini sağlar.
-            </p>
+              </p>
+              <p>
+                <span class="spacing"></span> Hem zamandan hem de teknik bilgi ihtiyacından kurtularak, kendi firmanız veya
+                müşterileriniz için raporlar oluşturun! DeBI içerisinde ihtiyaç duyduğunuz temel tüm raporları bulundurur ve bunları 
+                birbirleri ile ilişkilendirmenize olanak sağlar. SQL bilgisine artık ihtiyacınız yok!
+              </p>
             </div>
           </div>
         </div>
@@ -294,8 +304,8 @@
                       <i class="fa-solid fa-xmark"></i>
                     </div>
                   </div>
-                  <div class="window-context">
-                    <img src="img/debi-screen-2.png" alt="" style="width: 100%">
+                  <div onclick="img_modal('debi-screen-5')" class="window-context">
+                    <img src="img/debi-screen-5.png" alt="" style="width: 100%">
                   </div>
                 </div>
               </div>
@@ -313,7 +323,11 @@
                 <span class="spacing"></span> Pasif eski usül raporların yerine DeBI ile sürekli yeni raporlar
                 oluşturmak zorunda kalmadan aynı rapor sayfalarını güncel olarak
                 görüntüleyebilir günün şartlarına göre hızlıca düzenleyebilirsiniz.
-            </p>
+              </p>
+              <p>
+                <span class="spacing"></span> Güvenli bir sunucu bağlantısı ile verilerinizi internete açmadan güncel olarak 
+                takip edebilirsiniz!
+              </p>
             </div>
           </div>
         </div>
@@ -334,8 +348,8 @@
                       <i class="fa-solid fa-xmark"></i>
                     </div>
                   </div>
-                  <div class="window-context">
-                    <img src="img/debi-screen-3.png" alt="" style="width: 100%">
+                  <div onclick="img_modal('debi-screen-2')" class="window-context">
+                    <img src="img/debi-screen-2.png" alt="" style="width: 100%">
                   </div>
                 </div>
               </div>
@@ -361,7 +375,7 @@
 
       </div>
       
-      <div class="free-trial-outer container-fluid">
+      <div id="free-trial" class="free-trial-outer container-fluid">
         <div class="row justify-content-center" style="width: 100%">
           <div class="col-xxl-5 col-lg-6 col-md-12 free-trial-card">
             <h1>ÜCRETSİZ DENEYİN</h1>
@@ -408,23 +422,25 @@
     </div>
 
     <!-- -- SUPPORTED PLATFORMS -- -->
-    <div class="supported-platforms-details-outer container-fluid">
-      <div class="row align-items-end justify-content-evenly">
-        <div class="col-xl-3 col-sm-6 platform-col">
-          <img id="supp_netsis" src="img/supported_Netsis.png" alt="">
+    <div class="container">
+      <div class="supported-platforms-details-outer container-fluid">
+        <div class="row align-items-end justify-content-evenly">
+          <div class="col-xl-3 col-sm-6 platform-col">
+            <img id="supp_netsis" src="img/supported_Netsis.png" alt="">
+          </div>
+          <div class="col-xl-3 col-sm-6 platform-col">
+            <img id="supp_parasut" src="img/supported_parasut.png" alt="">
+          </div>
+          <div class="col-xl-3 col-sm-6 platform-col">
+            <img id="supp_binance" src="img/supported_binance.png" alt="">
+          </div>
+          <div class="col-xl-3 col-sm-6 platform-col">
+            <img id="supp_trendyol" src="img/supported_trendyol.png" alt="">
+          </div>
         </div>
-        <div class="col-xl-3 col-sm-6 platform-col">
-          <img id="supp_parasut" src="img/supported_parasut.png" alt="">
+        <div class="platform-details">
+          <a href="">Detaylı bilgi için tıklayın.</a>
         </div>
-        <div class="col-xl-3 col-sm-6 platform-col">
-          <img id="supp_binance" src="img/supported_binance.png" alt="">
-        </div>
-        <div class="col-xl-3 col-sm-6 platform-col">
-          <img id="supp_trendyol" src="img/supported_trendyol.png" alt="">
-        </div>
-      </div>
-      <div class="platform-details">
-        <a href="">Detaylı bilgi için tıklayın.</a>
       </div>
     </div>
 
@@ -554,6 +570,18 @@
     </footer>
 
 
+    <!-- -- IMG PREVIEW -- -->
+    <div class="modal fade" id="img" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-centered">
+        <div class="modal-content" onclick="$('#img').modal('hide');" style="background-color: transparent;">
+          <div class="modal-body">
+            <img id="modal_img" src="img/debi-screen-1.png" alt="image preview" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -564,6 +592,11 @@
     <script src="js/features.js"></script>
     <script>
       
+      function img_modal(imgname) {
+        document.getElementById('modal_img').src = 'img/' + imgname + '.png'
+        $('#img').modal('show');
+      }
+
       async function themeDetect() {
         if (localStorage.getItem('theme') === null) {
           //* Auto Theme Detect

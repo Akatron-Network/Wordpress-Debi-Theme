@@ -4,7 +4,6 @@
   background-image: url(../img/backgrounds/content-bg.png);
   background-size: cover;
   background-position: center top;
-  margin-top: 20px;
 }
 
 .site-main {
@@ -13,110 +12,9 @@
 }
 
 .wedocs-single-wrap {
-  background-color: rgba(31,31,31,0.9);
+  background-color: rgba(31,31,31,0.8);
 }
 
-.content-area h1 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-.content-area h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-.content-area h3 {
-  font-size: 1.4rem;
-}
-
-.entry-content h3 {
-  margin-top: 3rem;
-  font-weight: bold !important;
-}
-
-.content-area a {
-  color: var(--cadmium_green_window_li);
-  transition: .2s;
-}
-
-.content-area a:hover {
-  color: var(--cadmium_green);
-}
-
-.doc-nav-list a {
-  font-size: 0.9rem;
-}
-
-.article-child {
-  margin-top: 70px;
-}
-
-.wedocs-doc-nav {
-  border: none !important;
-  margin: 0 !important;
-  padding: 20px !important;
-}
-
-kbd {
-  background-color: transparent !important;
-}
-
-.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-  background-color: var(--hr_gray) !important;
-}
-
-.wedocs-doc-nav a {
-  font-size: 1.2rem;
-}
-
-.wedocs-caret {
-  border-color: transparent !important;
-  font-size: 20px !important;
-}
-
-.wedocs-single-wrap .wedocs-sidebar h3.widget-title,
-.wedocs-single-wrap .wedocs-single-content {
-  border-color: gray !important;
-}
-.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children {
-  border-color: gray !important;
-
-}
-
-.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor li.current_page_item > a {
-  border-color: var(--cadmium_green) !important;
-  border-width: 4px !important;
-}
-
-.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor > a {
-  background: var(--cadmium_green_tra) !important;
-}
-
-.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children a {
-  color: var(--platinium) !important;
-}
-
-.wedocs-single-wrap .wedocs-single-content article .entry-content img {
-  background: transparent !important;
-  border-color: transparent !important;
-}
-.wp-block-image .aligncenter>figcaption {
-  margin-top: -20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1220px) {
   
-  .wedocs-single-wrap .wedocs-sidebar {
-    width: 20% !important;
-  }
-
-  .wedocs-single-wrap .wedocs-single-content {
-    width: 80% !important;
-  }
 }

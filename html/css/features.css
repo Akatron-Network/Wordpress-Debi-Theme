@@ -1,7 +1,7 @@
 
 .features-outer {
-  padding: 40px;
-  margin-top: -60px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .feature-col {
@@ -17,7 +17,7 @@
 }
 
 .feature-col h2 {
-  font-size: 27px;
+  font-size: 24px;
   margin-top: 20px;
   text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.6);
   font-weight: bold;
@@ -35,11 +35,11 @@
 }
 
 .feature-col img {
-  height: 80px;
+  height: 60px;
 }
 
 .feature-mid-col {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .feature-passive img {
@@ -95,6 +95,7 @@
 
 .feature-details {
   position: relative;
+  min-height: 570px;
 }
 
 .feature-details-outer {
@@ -102,7 +103,7 @@
   background-size: cover;
   background-position: center top;
   position: relative;
-  padding-top: 180px;
+  padding-top: 120px;
   margin-top: -80px;
 }
 
@@ -199,7 +200,7 @@
 }
 
 
-.light #win .window-context img {
+/* .light #win .window-context img {
   content: url('../img/light-debi-screen-2.png');
 }
 .light #win2 .window-context img {
@@ -207,4 +208,4 @@
 }
 .light #win3 .window-context img {
   content: url('../img/light-debi-screen-2.png');
-}
+} */
