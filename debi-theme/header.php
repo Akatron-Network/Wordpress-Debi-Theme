@@ -133,20 +133,17 @@
           </a>
 
           <li class="nav-item dropable">
-            <a class="nav-link" href="/docs/debi-turkce">Bilgi Merkezi</a>
+            <a class="nav-link">Bilgi Merkezi</a>
             <div class="nav-dropdown">
               <div class="list-group">
                 <a href="/docs/debi-turkce/baslangic/" class="list-group-item list-group-item-action"
                   >Kullanmaya Başlayın</a
                 >
+                <a href="/uygulamayi-indir" class="list-group-item list-group-item-action"
+                  >Uygulamayı İndir</a
+                >
                 <a href="/docs/debi-turkce" class="list-group-item list-group-item-action"
                   >Dökümanlar</a
-                >
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Youtube Dersleri</a
-                >
-                <a href="#" class="list-group-item list-group-item-action"
-                  >Bayiler</a
                 >
                 <a href="https://www.akatron.net/category/academy/" class="list-group-item list-group-item-action"
                   >Akatron Akademi</a
@@ -156,7 +153,7 @@
           </li>
 
           <li class="nav-item dropable">
-            <a class="nav-link" href="#">Kurumsal</a>
+            <a class="nav-link">Kurumsal</a>
             <div class="nav-dropdown">
               <div class="list-group">
                 <a href="https://akatron.net/" class="list-group-item list-group-item-action"
