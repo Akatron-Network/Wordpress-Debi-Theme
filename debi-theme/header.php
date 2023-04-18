@@ -159,8 +159,8 @@
                 <a href="https://akatron.net/" class="list-group-item list-group-item-action"
                   >Akatron Network</a
                 >
-                <a href="https://akatron.net/kariyer/" class="list-group-item list-group-item-action"
-                  >Kariyer</a
+                <a href="https://akatron.net/kurumsal/" class="list-group-item list-group-item-action"
+                  >Kurumsal</a
                 >
                 <a href="https://akatron.net/iletisim/" class="list-group-item list-group-item-action"
                   >İletişim</a

@@ -179,3 +179,140 @@
     padding-bottom: 30px;
   }
 }
+
+
+
+.pricing-packs h1 {
+  color: var(--green_pantone);
+  font-family: "Righteous";
+  font-size: 50px;
+}
+
+.pricing-packs p {
+  font-size: 20px;
+}
+
+.pricing-pack-card {
+  padding: 20px;
+  background-color: var(--black_light_tra);
+  box-shadow: 1px 5px 10px 4px rgb(0 0 0 / 10%);
+  margin-top: 30px;
+}
+
+.pricing-pack-card h2 {
+  font-size: 40px;
+  font-family: "Righteous";
+  padding: 30px;
+  color: var(--platinium) !important;
+}
+
+.pricing-pack-card .pack-code {
+  margin-top: -30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: var(--cadmium_green) !important;
+}
+
+.pricing-pack-card .user-box {
+  font-size: 25px;
+  /* padding: 20px; */
+  display: inline-block;
+  font-family: "Righteous";
+  width: 200px;
+  text-align: center;
+  margin: 10px 15px;
+  line-height: 35px;
+  border-radius: 5px;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-pack-card .viewer {
+  color: var(--green_pantone);
+  background-color: var(--middle_black);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-pack-card .local-editor {
+  color: #054dc9;
+  background-color: var(--middle_black);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-pack-card .pro-editor {
+  color: #a70fc9;
+  background-color: var(--middle_black);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-pack-card .user-box .user-box-alt {
+  font-size: 20px;
+  font-family: "Montserrat";
+  display: block;
+  margin-top: 10px;
+}
+
+.pack-price-outer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.pack-price {
+  font-family: "Righteous";
+  font-size: 45px;
+}
+.pack-price span {
+  font-size: 25px;
+  font-family: "Montserrat";
+}
+
+.pack-buy {
+  text-align: right;
+}
+
+.pack-buy .btn {
+  border-radius: 0;
+  border-width: 0;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.pack-buy p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 990px) {
+  .pack-price-outer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-top: 30px;
+  }
+  .pricing-pack-card h2 {
+    margin-bottom: 25px;
+  }
+  
+  .pricing-pack-card .pack-code {
+    margin-top: -55px;
+    margin-bottom: 40px;
+  }
+}

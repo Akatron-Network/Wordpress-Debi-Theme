@@ -53,7 +53,7 @@ function my_phpmailer_example( $phpmailer ) {
 	$phpmailer->SMTPAuth = true; // Ask it to use authenticate using the Username and Password properties
 	$phpmailer->Port = 587;
 	$phpmailer->Username = 'debi@akatron.net';
-	$phpmailer->Password = '';
+	$phpmailer->Password = 'akatron2022';
 
 	// Additional settings…
 	$phpmailer->SMTPSecure = 'tls'; // Choose 'ssl' for SMTPS on port 465, or 'tls' for SMTP+STARTTLS on port 25 or 587
