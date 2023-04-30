@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
+              <a class="nav-link" href="/uygulamayi-indir/">Uygulamayı İndir</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/fiyatlandirma/">Fiyatlandırma</a>
@@ -66,7 +66,7 @@
           </ul>
         </div>
         <form class="d-flex">
-          <a href="http://debiapi.akatron.net/giris" class="btn btn-login btn-login-active" type="submit">
+          <a href="http://debi-app.akatron.net/giris" class="btn btn-login btn-login-active" type="submit">
             <i class="fa-solid fa-user-tie"></i>
             <span>&nbsp; Giriş Yap</span>
           </a>
@@ -99,26 +99,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item d-lg-none" style="background: transparent">
-            <a href="http://debiapi.akatron.net/giris" class="nav-link" href="#"
+            <a href="http://debi-app.akatron.net/giris" class="nav-link" href="#"
               ><i class="fa-solid fa-right-to-bracket"></i> &nbsp; Giriş Yap</a
             >
           </li>
 
-          <li class="nav-item dropable">
-            <a class="nav-link" href="/nerede-kullanilir/">Nerde Kullanılır</a>
-            <div class="nav-dropdown">
-              <div class="list-group">
-                <a href="/nerede-kullanilir/#for-departments" class="list-group-item list-group-item-action"
-                  >Departmanlar</a
-                >
-                <a href="/nerede-kullanilir/#for-sectores" class="list-group-item list-group-item-action"
-                  >Sektörler</a
-                >
-                <a href="/nerede-kullanilir/#for-technologies" class="list-group-item list-group-item-action"
-                  >Teknolojiler</a
-                >
-              </div>
-            </div>
+          <li class="nav-item" style="background: transparent">
+            <a class="nav-link" href="/uygulamayi-indir/">Uygulamayı İndir</a>
           </li>
 
           <li class="nav-item" style="background: transparent">
@@ -139,8 +126,8 @@
                 <a href="/docs/debi-turkce/baslangic/" class="list-group-item list-group-item-action"
                   >Kullanmaya Başlayın</a
                 >
-                <a href="/uygulamayi-indir" class="list-group-item list-group-item-action"
-                  >Uygulamayı İndir</a
+                <a href="/nerede-kullanilir/" class="list-group-item list-group-item-action"
+                  >Nerede Kullanılır</a
                 >
                 <a href="/docs/debi-turkce" class="list-group-item list-group-item-action"
                   >Dökümanlar</a
@@ -181,7 +168,7 @@
       </btn>
 
         <a
-          href="http://debiapi.akatron.net/giris"
+          href="http://debi-app.akatron.net/giris"
           type="button"
           class="btn btn-login btn-login-active d-none d-lg-block"
         >

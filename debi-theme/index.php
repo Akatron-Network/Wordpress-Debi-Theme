@@ -47,8 +47,19 @@ if (!empty($_POST)) {
       Anlaşılır ve sadeleştirilmiş <b>pivot tablolar, grafikler</b> ve bir
       çok panel çeşidine sahip anlık raporlar ile doğru kararlar verin!
     </div>
-    <div style="text-align: right;">
-      <a href="#free-trial" type="button" class="btn btn-try">Ücretsiz Dene!</a>
+    <div class="row mt-3">
+      <div class="col-sm-6 d-none d-sm-block">
+        <a href="http://debi-app.akatron.net/demo/" type="button" class="btn btn-demo">
+          <i class="fa-solid fa-desktop"></i>
+          Demo
+        </a>
+      </div>
+      <div class="col-sm-6 " style="text-align: right;">
+        <a href="#free-trial" type="button" class="btn btn-try">
+          <i class="fa-solid fa-envelope-circle-check"></i>
+          Deneme Talebi
+        </a>
+      </div>
     </div>
   </div>
   <div class="col-xl-6 stage-anim">

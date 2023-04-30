@@ -47,16 +47,16 @@
       <h1><span>De</span>signable  <span>B</span>usiness <span>I</span>ntelligence</h1>
       <div class="row">
         <div class="col-lg-6 menu-col">
-          <a href="" class="menu-link">Nerde Kullanılır</a>
+          <a href="/uygulamayi-indir/" class="menu-link">Uygulamayı İndir</a>
         </div>
         <div class="col-lg-6 menu-col">
-          <a href="" class="menu-link">Kurumsal</a>
+          <a href="https://www.akatron.net" class="menu-link">Kurumsal</a>
         </div>
         <div class="col-lg-6 menu-col">
-          <a href="" class="menu-link">Fiyatlandırma</a>
+          <a href="/fiyatlandirma" class="menu-link">Fiyatlandırma</a>
         </div>
         <div class="col-lg-6 menu-col">
-          <a href="" class="menu-link">Bilgi Merkezi</a>
+          <a href="/docs/debi-turkce/baslangic/" class="menu-link">Bilgi Merkezi</a>
         </div>
       </div>
       <div class="row ask-row">
@@ -64,7 +64,7 @@
           Sorunuza Cevap Bulamadınız mı?
         </div>
         <div class="col-lg-3 ask-btn">
-          <button type="button" class="btn btn-primary">İletişim</button>
+          <a href="https://www.akatron.net/iletisim/" type="button" class="btn btn-primary">İletişim</a>
         </div>
       </div>
     </div>

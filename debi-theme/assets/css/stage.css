@@ -125,7 +125,8 @@
 }
 
 .btn-try {
-  background-color: var(--green_pantone);
+  background-color: var(--cadmium_green);
+  color: var(--platinium);
   border: transparent solid 2px;
   font-size: 20px;
   font-weight: bold;
@@ -136,11 +137,26 @@
 }
 
 .btn-try:hover {
-  border: var(--green_pantone) solid 2px;
-  background-color: #14b85b25;
+  background-color: var(--shadow_green);
   transform: scale(1.1);
 }
 
+.btn-demo {
+  background-color: #5470c68c;
+  color: var(--platinium);
+  border: transparent solid 2px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: .2s;
+  padding: 10px 15px;
+}
+
+.btn-demo:hover {
+  background-color: #3e5aad;
+  transform: scale(1.1);
+}
 
 
 @media screen and (max-width: 1370px) {
